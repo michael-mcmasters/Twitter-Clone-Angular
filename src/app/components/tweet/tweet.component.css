@@ -1,5 +1,17 @@
 .container {
   display: flex;
-  background-color: gray;
+  background-color: #15202b;
+  color: #d8dadc;
   padding: 20px;
+  border-left: 1px solid #38444d;
+  border-top: 1px solid #38444d;
+  border-right: 1px solid #38444d;
+}
+
+/* border-radius turns square picture into circle */
+img {
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
 }
