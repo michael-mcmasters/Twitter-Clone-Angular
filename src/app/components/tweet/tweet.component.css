@@ -6,6 +6,7 @@
   border-left: 1px solid #38444d;
   border-top: 1px solid #38444d;
   border-right: 1px solid #38444d;
+  font-size: 15px;
 }
 
 /* border-radius turns square picture into circle */
@@ -14,4 +15,13 @@ img {
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
+}
+
+header {
+  display: flex;
+  overflow-wrap: break-word;
+}
+
+span {
+  margin-right: 4px;
 }
