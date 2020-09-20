@@ -7,10 +7,10 @@ import { Tweet } from 'src/app/models/tweet';
   styleUrls: ['./tweets.component.css']
 })
 export class TweetsComponent implements OnInit {
-  //tweets: any[] = [1, 2, 3];
   tweets: Tweet[];
 
   constructor() {
+    // This *could* be assigned when tweets is declared. But putting it here, because we would be using an API call in the constructor to get this information.
     this.tweets = [
       {
         name: 'Dayman McMasters',
