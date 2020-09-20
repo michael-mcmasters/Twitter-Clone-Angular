@@ -9,6 +9,7 @@ import { Tweet } from 'src/app/models/tweet';
 export class TweetComponent implements OnInit {
 
   @Input() tweet: Tweet;
+  imageURL: string = "https://cdn-media-1.freecodecamp.org/images/1*dxawCwfllIh8ljUcRtwnXg.png"
 
   constructor() { }
 
