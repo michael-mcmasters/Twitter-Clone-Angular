@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tweet } from 'src/app/models/tweet';
 
 @Component({
   selector: 'app-tweets',
@@ -7,21 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TweetsComponent implements OnInit {
   //tweets: any[] = [1, 2, 3];
-  tweets: any[];
+  tweets: Tweet[];
 
   constructor() {
     this.tweets = [
       {
         name: 'Dayman McMasters',
-        message: 'Hello Everyone!'
+        message: 'Hello Everyone!',
       },
       {
         name: 'Nathan Cleminson',
-        message: 'Hello Everyone!'
+        message: 'Hi people!'
       },
       {
         name: 'Stephy Cheeseman',
-        message: 'Hello Everyone!'
+        message: 'Giggity Gooey!'
       }
     ]
   }
