@@ -14,15 +14,15 @@ export class TweetsComponent implements OnInit {
     this.tweets = [
       {
         name: 'Dayman McMasters',
-        message: 'Hello Everyone!',
+        message: 'Hello Everyone! I need a longer message so this is my longer message right here in this place here',
       },
       {
         name: 'Nathan Cleminson',
-        message: 'Hi people!'
+        message: "Seminole Heights has a new colorful crosswalk outside Broward Elementary as part of our Crosswalks to Classrooms initiative.Learn how this street mural is designed to inspire kids on their way to school while supporting"
       },
       {
         name: 'Stephy Cheeseman',
-        message: 'Giggity Gooey!'
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
       }
     ]
   }

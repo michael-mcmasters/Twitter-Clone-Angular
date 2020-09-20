@@ -1,8 +1,12 @@
 .container {
+  width: 450px;
   display: flex;
   background-color: #15202b;
   color: #d8dadc;
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   border-left: 1px solid #38444d;
   border-top: 1px solid #38444d;
   border-right: 1px solid #38444d;
@@ -24,4 +28,12 @@ header {
 
 span {
   margin-right: 4px;
+}
+
+#bold {
+  font-weight: bold;
+}
+
+#secondary-color {
+  color: #8796a0;
 }
