@@ -1,5 +1,7 @@
+/* When inspecting a website to get its width, the number isn't accurate. Subtract the padding and enter that as the width, because padding makes a div bigger. */
+/* For example, inspecting a Twitter.com tweet gives a width is 598. But it has padding of 15 on the left and 15 on the right. So it's actual width is 598-15-15 = 568. */
 .container {
-  width: 450px;
+  width: 568px;
   display: flex;
   background-color: #15202b;
   color: #d8dadc;
@@ -15,7 +17,7 @@
 
 /* border-radius turns square picture into circle */
 img {
-  margin-right: 20px;
+  margin-right: 10px;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
