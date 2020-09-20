@@ -6,9 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tweets.component.css']
 })
 export class TweetsComponent implements OnInit {
-  constructor() { }
+  //tweets: any[] = [1, 2, 3];
+  tweets: any[];
 
-  name: string = 'Jimitron';
+  constructor() {
+    this.tweets = [
+      {
+        name: 'Dayman McMasters',
+        message: 'Hello Everyone!'
+      },
+      {
+        name: 'Nathan Cleminson',
+        message: 'Hello Everyone!'
+      },
+      {
+        name: 'Stephy Cheeseman',
+        message: 'Hello Everyone!'
+      }
+    ]
+  }
 
   ngOnInit(): void { }
 }
