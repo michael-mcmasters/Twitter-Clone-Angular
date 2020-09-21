@@ -10,6 +10,8 @@ export class SideBarComponent implements OnInit {
   sideBarItems: SideBarItem[];
 
   constructor() {
+    console.log("SIDEBAR RUNNING");
+
     this.sideBarItems = [
       {
         name: "Home",
