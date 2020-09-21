@@ -15,6 +15,10 @@
   font-size: 15px;
 }
 
+.container:hover {
+  background-color: #192734;
+}
+
 /* border-radius turns square picture into circle */
 img {
   margin-right: 10px;
