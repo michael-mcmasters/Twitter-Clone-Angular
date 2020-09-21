@@ -25,7 +25,6 @@ img {
 
 header {
   display: flex;
-  overflow-wrap: break-word;
 }
 
 span {

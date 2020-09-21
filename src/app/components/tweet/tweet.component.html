@@ -3,9 +3,9 @@
   <div>
     <header>
       <span id="bold">{{ tweet.name }}</span>
-      <span id="secondary-color">@username</span>
+      <span id="secondary-color">@{{ tweet.userName }}</span>
       <span id="secondary-color">·</span>
-      <span id="secondary-color">17h</span>
+      <span id="secondary-color">{{ tweet.age }}h</span>
     </header>
     <main>
       <div>{{ tweet.message }}</div>
