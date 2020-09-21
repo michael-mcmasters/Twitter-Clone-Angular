@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { Theme } from 'src/app/models/Theme';
+import { Theme } from 'src/app/models/theme';
 
 @Component({
   selector: 'app-color-theme-toggle',
