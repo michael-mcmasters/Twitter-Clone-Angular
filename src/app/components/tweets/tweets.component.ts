@@ -16,28 +16,28 @@ export class TweetsComponent implements OnInit {
         name: 'Dayman McMasters',
         userName: 'DaymanKnight',
         postAge: 2,
-        profileImage: "",
+        profileImage: "./assets/images/dayman-avatar.jpg",
         message: 'Hello Everyone! I need a longer message so this is my longer message right here in this place here',
       },
       {
         name: 'Nathan Cleminson',
         userName: 'NateMcMasters',
         postAge: 3,
-        profileImage: "",
+        profileImage: "./assets/images/nate-avatar.jpg",
         message: "Seminole Heights has a new colorful crosswalk outside Broward Elementary as part of our Crosswalks to Classrooms initiative.Learn how this street mural is designed to inspire kids on their way to school while supporting"
       },
       {
         name: 'Stephy Cheeseman',
         userName: 'Sparklebunny',
         postAge: 6,
-        profileImage: "",
+        profileImage: "./assets/images/stephy-avatar.jpg",
         message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
       },
       {
         name: 'Chris Beardsley',
         userName: 'ChrisBFriedChicken',
         postAge: 6,
-        profileImage: "",
+        profileImage: "./assets/images/chris-avatar.jpg",
         message: "I run this town"
       }
     ]
