@@ -15,6 +15,7 @@
   border-top: 1px solid #38444d;
   border-right: 1px solid #38444d;
   font-size: 15px;
+  cursor: pointer;
 
   /* makes focus/hover transition over 0.2 seconds instead of instantly */
   transition: var(--transition-delay);
