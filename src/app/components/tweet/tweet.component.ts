@@ -26,6 +26,7 @@ export class TweetComponent implements OnInit {
     this.document.body.classList.replace(this.theme, this.theme === "light-theme" ? this.theme = "dark-theme" : this.theme = "light-theme");
   }
 
+  // add color theme CSS class to <body> tag so all components can use its variables (--background-color) etc.
   initializeTheme() {
     this.renderer.addClass(this.document.body, this.theme);
   }

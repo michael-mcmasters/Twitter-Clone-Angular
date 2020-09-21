@@ -1,15 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
 /* hover color for tweets seems to be the normal (non-hover) background color for the What's Happening section. Its hover color is even brighter. */
 .light-theme {
   --background-color: white;
-  --background-hover-color: #192734;
+  --background-color-hover: #f5f8fa;
   --primary-text-color: #222527;
-  --secondary-text-color: #b7bfc6;
+  --secondary-text-color: #232f39;
+  --border-color: #38444d;
 }
 
 .dark-theme {
   --background-color: #15202b;
-  --background-hover-color: #192734;
+  --background-color-hover: #192734;
   --primary-text-color: #d8dadc;
   --secondary-text-color: #8796a0;
+  --border-color: #38444d;
 }
