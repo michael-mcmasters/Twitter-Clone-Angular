@@ -1,17 +1,15 @@
-import { Component, Inject, Input, OnInit, Renderer2 } from '@angular/core';
+import { Component, Inject, OnInit, Renderer2 } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { Tweet } from 'src/app/models/tweet';
 
 @Component({
-  selector: 'app-tweet',
-  templateUrl: './tweet.component.html',
-  styleUrls: ['./tweet.component.css']
+  selector: 'app-color-theme-toggle',
+  templateUrl: './color-theme-toggle.component.html',
+  styleUrls: ['./color-theme-toggle.component.css']
 })
-export class TweetComponent implements OnInit {
+// Code from here: https://www.youtube.com/watch?v=0lD5P_z7EiI&ab_channel=all.design
+export class ColorThemeToggleComponent implements OnInit {
 
-  @Input() tweet: Tweet;
-  imageURL: string = "https://cdn-media-1.freecodecamp.org/images/1*dxawCwfllIh8ljUcRtwnXg.png"
-  theme: string = "light-theme";
+  theme: string = "dark-theme";
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -30,5 +28,4 @@ export class TweetComponent implements OnInit {
   initializeTheme() {
     this.renderer.addClass(this.document.body, this.theme);
   }
-
 }
