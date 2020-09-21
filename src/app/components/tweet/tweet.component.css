@@ -5,8 +5,7 @@
 
   width: 568px;
   display: flex;
-  background-color: #15202b;
-  color: #d8dadc;
+  color: var(--primary-text-color);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -48,5 +47,5 @@ span {
 }
 
 #secondary-color {
-  color: #8796a0;
+  color: var(--secondary-text-color);
 }
