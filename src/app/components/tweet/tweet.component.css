@@ -1,8 +1,6 @@
 /* When inspecting a website to get its width, the number isn't accurate. Subtract the padding and enter that as the width, because padding makes a div bigger. */
-/* For example, inspecting a Twitter.com tweet gives a width is 598. But it has padding of 15 on the left and 15 on the right. So it's actual width is 598-15-15 = 568. */
+/* For example, inspecting a tweet on Twitter.com gives a width is 598. But it has padding of 15 on the left and 15 on the right. So it's actual width is 598-15-15 = 568. */
 .container {
-  --transition-delay: 0.2s;
-
   width: 568px;
   display: flex;
   color: var(--primary-text-color);
@@ -18,7 +16,7 @@
   cursor: pointer;
 
   /* makes focus/hover transition over 0.2 seconds instead of instantly */
-  transition: var(--transition-delay);
+  transition: 0.2s;
 }
 
 /* I believe focus is called when you tab over item instead of mousing over it. */
@@ -37,16 +35,13 @@ img {
 
 header {
   display: flex;
+  color: var(--secondary-text-color);
 }
 
 span {
   margin-right: 4px;
 }
 
-#bold {
+#name {
   font-weight: bold;
-}
-
-#secondary-color {
-  color: var(--secondary-text-color);
 }
