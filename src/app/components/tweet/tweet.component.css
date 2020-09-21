@@ -21,7 +21,7 @@
   transition: var(--transition-delay);
 }
 
-/* focus I believe is called when you tab over item instead of mousing over it. */
+/* I believe focus is called when you tab over item instead of mousing over it. */
 .container:focus,
 .container:hover {
   background-color: var(--background-color-hover);
