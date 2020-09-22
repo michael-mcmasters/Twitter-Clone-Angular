@@ -6,9 +6,11 @@
   font-size: 19px;
   color: var(--primary-text-color);
   cursor: pointer;
+
+  transition: 0.2s;
 }
 
-.container :hover {
+.container:hover {
   color: blue;
 }
 
