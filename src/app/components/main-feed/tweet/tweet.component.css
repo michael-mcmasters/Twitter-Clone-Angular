@@ -1,12 +1,7 @@
 /* When inspecting a website to get its width, the number isn't accurate. Subtract the padding and enter that as the width, because padding makes a div bigger. */
 /* For example, inspecting a tweet on Twitter.com gives a width is 598. But it has padding of 15 on the left and 15 on the right. So it's actual width is 598-15-15 = 568. */
 .container {
-  /* width: 568px;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
   border-left: 1px solid;
   border-right: 1px solid;
   border-bottom: 1px solid;
@@ -15,26 +10,15 @@
   color: var(--primary-text-color);
   font-size: 15px;
 
-  /* makes focus/hover transition over 0.2 seconds instead of instantly */
-  /* transition: 0.2s;
-  cursor: pointer; */
-
-  display: flex;
+  /* Squeezes everything closer inside the div borders. The div size is set somewhere else. */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  border-left: 1px solid;
-  border-right: 1px solid;
-  border-bottom: 1px solid;
-  border-color: var(--border-color);
-
-  color: var(--primary-text-color);
-  font-size: 15px;
 
   /* makes focus/hover transition over 0.2 seconds instead of instantly */
-  /* transition: 0.2s;
-  cursor: pointer; */
+  transition: 0.2s;
+  cursor: pointer;
 }
 
 /* I believe focus is called when you tab over item instead of mousing over it. */

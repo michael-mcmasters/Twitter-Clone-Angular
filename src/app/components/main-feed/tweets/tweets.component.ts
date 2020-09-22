@@ -17,7 +17,7 @@ export class TweetsComponent implements OnInit {
         userName: 'DaymanKnight',
         postAge: 2,
         profileImage: "./assets/images/dayman-avatar.jpg",
-        message: 'Hello Everyone! I need a longer message so this is my longer message right here in this place here',
+        message: "I'm a pretty little teapot. Short and stout!"
       },
       {
         name: 'Nathan Cleminson',
