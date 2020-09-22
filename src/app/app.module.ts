@@ -10,9 +10,10 @@ import { ColorThemeToggleComponent } from './components/side-bar/color-theme-tog
 import { SideBarComponent } from './components/side-bar/side-bar/side-bar.component';
 import { SideBarItemComponent } from './components/side-bar/side-bar-item/side-bar-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { WhatsHappeningComponent } from './components/whats-happening/whats-happening/whats-happening.component';
 
 @NgModule({
-  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, SideBarItemComponent],
+  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, SideBarItemComponent, WhatsHappeningComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule],
   providers: [],
   bootstrap: [AppComponent],
