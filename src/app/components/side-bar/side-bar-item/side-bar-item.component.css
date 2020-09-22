@@ -1,9 +1,9 @@
 .container {
   display: flex;
-  align-items: center; /* This makes center of icons and text align */
 
-  padding-top: 7px;
-  padding-bottom: 7px;
+  align-items: center; /* This makes center of icons and text align */
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   font-weight: bold;
   font-size: 19px;
@@ -17,12 +17,6 @@
   color: blue;
 }
 
-mat-icon {
-  padding-right: 10px;
-  /* padding-right: 10px; */
-}
-
 .text {
-  padding: 10px;
-  padding-left: 10px;
+  padding-left: 20px;
 }
