@@ -1,9 +1,10 @@
 .container {
   padding: 4px;
+  display: flex;
+  align-items: center; /* This makes center of icons and text align */
   font-weight: bold;
   font-size: 19px;
   color: var(--primary-text-color);
-
   cursor: pointer;
 }
 
