@@ -1,5 +1,8 @@
 .container {
-  padding: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 0px;
+  padding-right: 0px;
   display: flex;
   align-items: center; /* This makes center of icons and text align */
   font-weight: bold;
@@ -15,10 +18,11 @@
 }
 
 mat-icon {
-  /* margin-right: 10px; */
+  margin-right: 10px;
   /* padding-right: 10px; */
 }
 
 .text {
   padding: 10px;
+  padding-left: 10px;
 }
