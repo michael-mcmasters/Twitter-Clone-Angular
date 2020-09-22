@@ -38,10 +38,11 @@ header {
   color: var(--secondary-text-color);
 }
 
-span {
-  margin-right: 4px;
-}
-
 #name {
   font-weight: bold;
+  color: var(--primary-text-color);
+}
+
+span {
+  margin-right: 4px;
 }
