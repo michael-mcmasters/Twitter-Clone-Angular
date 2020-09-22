@@ -3,6 +3,8 @@
   font-weight: bold;
   font-size: 19px;
   color: var(--primary-text-color);
+
+  cursor: pointer;
 }
 
 .container :hover {
