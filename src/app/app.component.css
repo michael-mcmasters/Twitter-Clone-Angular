@@ -3,7 +3,6 @@
 }
 
 .left-side-container {
-  border: 1px solid red;
   position: relative;
   left: 45px;
 
@@ -21,10 +20,10 @@
 }
 
 .right-side-container {
-  border: 1px solid blue;
   position: relative;
   left: 134px;
 
   width: 348px;
   height: 400px;
+  border: 1px solid blue;
 }
