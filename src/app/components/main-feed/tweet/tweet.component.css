@@ -3,7 +3,6 @@
 .container {
   width: 568px;
   display: flex;
-  color: var(--primary-text-color);
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -12,11 +11,13 @@
   border-right: 1px solid;
   border-bottom: 1px solid;
   border-color: var(--border-color);
+
+  color: var(--primary-text-color);
   font-size: 15px;
-  cursor: pointer;
 
   /* makes focus/hover transition over 0.2 seconds instead of instantly */
   transition: 0.2s;
+  cursor: pointer;
 }
 
 /* I believe focus is called when you tab over item instead of mousing over it. */
@@ -25,12 +26,11 @@
   background-color: var(--background-color-hover);
 }
 
-/* border-radius turns square picture into circle */
 img {
-  margin-right: 10px;
-  border-radius: 50%;
   width: 3rem;
   height: 3rem;
+  margin-right: 10px;
+  border-radius: 50%; /* turns square picture into circle */
 }
 
 header {
