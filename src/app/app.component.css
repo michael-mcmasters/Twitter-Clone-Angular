@@ -6,7 +6,7 @@
 /* for all of the components on the right side of the page */
 .right-side-container {
   height: 400px;
-  width: 350px;
+  width: 345px;
   margin-left: 30px;
   border: 1px solid blue;
 }
