@@ -7,6 +7,9 @@
   position: relative;
   left: 45px;
 
+  /* If you don't set the width, then any padding/margin you give to children inside this div will change the width, which pushes other divs around it away. */
+  /* If you do set a width. Then the size is fixed. And any padding/margin in the children will simply overflow out of the div, but will not push other divs out of the way. */
+  /* Tldr: If you don't want other divs around this div to move when children set padding/margin. Set this div's size. */
   width: 190px;
 }
 
