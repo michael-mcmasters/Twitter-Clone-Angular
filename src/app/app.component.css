@@ -3,7 +3,11 @@
   justify-content: center;
 }
 
-/* for all of the components on the right side of the page */
+.left-side-container {
+  margin-top: 10px;
+  margin-right: 80px;
+}
+
 .right-side-container {
   height: 400px;
   width: 345px;

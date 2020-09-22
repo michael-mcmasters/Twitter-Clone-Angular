@@ -1,5 +1,5 @@
 .container {
-  padding: 4px;
+  padding: 7px;
   display: flex;
   align-items: center; /* This makes center of icons and text align */
   font-weight: bold;
@@ -12,6 +12,11 @@
 
 .container:hover {
   color: blue;
+}
+
+mat-icon {
+  /* margin-right: 10px; */
+  /* padding-right: 10px; */
 }
 
 .text {
