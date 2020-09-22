@@ -31,3 +31,6 @@ body {
   /* this goes here instead of in *, div's background color can't be overrided (specifically noticeable when using :hover on a tweet) */
   background-color: var(--background-color);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
