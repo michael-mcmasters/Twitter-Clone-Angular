@@ -1,23 +1,18 @@
-.container {
+span {
+  display: flex;
+  align-items: center; /* This makes center of icons and text align */
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   font-weight: bold;
   font-size: 19px;
   color: var(--primary-text-color);
 
   cursor: pointer;
-  transition: 0.2s;
 }
 
-.seccontainer {
-  display: flex;
-
-  align-items: center; /* This makes center of icons and text align */
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.seccontainer:hover {
-  transition: color 100ms ease-out;
-
+span:hover {
   background-color: burlywood;
   width: fit-content; /* Puts background around text's width instead of its div's width */
   border-radius: 30px; /* Makes edges of background round */
@@ -29,6 +24,9 @@
   /* The padding pushes the text to the right. This puts text back to where it was before hovering */
   position: relative;
   right: 10px;
+
+  /* transition: color 0.001s ease-in; */
+  transition: 0.2s ease-in-out;
 }
 
 .text {
