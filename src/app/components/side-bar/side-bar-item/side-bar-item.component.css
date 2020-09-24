@@ -16,23 +16,21 @@
 }
 
 .seccontainer:hover {
+  transition: color 100ms ease-out;
+
+  background-color: burlywood;
+  width: fit-content; /* Puts background around text's width instead of its div's width */
+  border-radius: 30px; /* Makes edges of background round */
+
+  /* Makes background a little larger than the text. (For some reason Twitter makes the right side wider than the left.) */
+  padding-left: 10px;
+  padding-right: 25px;
+
+  /* The padding pushes the text to the right. This puts text back to where it was before hovering */
   position: relative;
   right: 10px;
-  background-color: burlywood;
-  border-radius: 30px;
-  transition: color 100ms ease-out;
-  width: fit-content;
-  max-width: 999999px;
-  padding-left: 10px;
-  padding-right: 20px;
 }
 
 .text {
   padding-left: 20px;
 }
-
-/*
-mat-icon:hover.text:hover {
-  background-color: burlywood;
-}
-*/
