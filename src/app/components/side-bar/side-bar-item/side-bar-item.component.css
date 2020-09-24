@@ -1,10 +1,4 @@
 .container {
-  display: flex;
-
-  align-items: center; /* This makes center of icons and text align */
-  padding-top: 15px;
-  padding-bottom: 15px;
-
   font-weight: bold;
   font-size: 19px;
   color: var(--primary-text-color);
@@ -13,10 +7,32 @@
   transition: 0.2s;
 }
 
-.container:hover {
-  color: blue;
+.seccontainer {
+  display: flex;
+
+  align-items: center; /* This makes center of icons and text align */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.seccontainer:hover {
+  position: relative;
+  right: 10px;
+  background-color: burlywood;
+  border-radius: 30px;
+  transition: color 100ms ease-out;
+  width: fit-content;
+  max-width: 999999px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 .text {
   padding-left: 20px;
 }
+
+/*
+mat-icon:hover.text:hover {
+  background-color: burlywood;
+}
+*/
