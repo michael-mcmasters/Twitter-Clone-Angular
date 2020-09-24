@@ -10,6 +10,10 @@ span {
   color: var(--primary-text-color);
 
   cursor: pointer;
+
+  border-radius: 30px;
+  transition: 2s ease-in-out;
+  /* transition-property: background-color; */
 }
 
 span:hover {
@@ -25,8 +29,10 @@ span:hover {
   position: relative;
   right: 10px;
 
-  /* transition: color 0.001s ease-in; */
-  transition: 0.2s ease-in-out;
+  /* Sets it so that the transition will only apply to the given property. The rest are set instantly. */
+  /* transition: 0.4s ease; */
+  /* transition: 2s ease-in-out;
+  transition-property: background-color; */
 }
 
 .text {
