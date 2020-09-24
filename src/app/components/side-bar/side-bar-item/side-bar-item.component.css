@@ -1,27 +1,27 @@
 /* background-color: rgba(29 161 242 0.1); */
 
-.wow {
+span {
   display: flex;
   position: relative;
-
-  /* transition: 2s; */
+  width: fit-content;
 }
 
-.wow::before {
+span::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  right: 0;
   background-color: green;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-radius: 30px;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0;
 
   transition: 0.2s;
 }
 
-.wow:hover::before {
+span:hover::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -37,21 +37,37 @@
 }
 
 /*
-.wow::before {
+span {
+  display: flex;
+  position: relative;
+}
+
+span::before {
   content: "";
   position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
+  width: 100%;
+  height: 100%;
   left: 0;
-  border: 1px solid green;
-}
-*/
+  right: 0;
+  background-color: green;
+  z-index: -1;
+  opacity: 0.7;
 
-/*
-.text {
-  padding-left: 20px;
+  transition: 0.2s;
+}
+
+span:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: -1;
+  opacity: 0.7;
+
+  transition-property: background-color;
+  transition: 0.2s ease-in-out;
 }
 */
