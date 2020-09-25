@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SideBarItem } from 'src/app/models/sideBarItem';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'app-side-bar',
@@ -8,6 +9,7 @@ import { SideBarItem } from 'src/app/models/sideBarItem';
 })
 export class SideBarComponent implements OnInit {
   sideBarItems: SideBarItem[];
+  faTwitter = faTwitter;
 
   constructor() {
     console.log("SIDEBAR RUNNING");
