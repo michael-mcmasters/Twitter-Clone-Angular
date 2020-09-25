@@ -1,64 +1,48 @@
-/* background-color: rgba(29 161 242 0.1); */
-
-span {
-  display: flex;
+/* Wraps container into one div so that the :hover activation size is the same for each text and icon */
+.wrapper {
   position: relative;
-  width: fit-content;
+  display: flex;
+  align-items: center;
+
+  width: 250px;
+
+  padding-top: 45px;
+  padding-bottom: 15px;
+
+  font-weight: bold;
+  font-size: 19px;
+  color: var(--primary-text-color);
+
+  cursor: pointer;
 }
 
-span::after {
-  content: "";
+/* Contains icon & text. */
+.container {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Background is the size of the icon & text it's under. This padding makes it just a little bit larger */
+/* (There is no background when mouse isn't hovering) */
+.background {
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 20px; /* (for some reason, twitter.com makes the right side a bit wider than the left side). */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* Makes edges of background round */
   border-radius: 30px;
-
-  background-color: green;
-  opacity: 0;
-  z-index: -1;
-
-  /* 0.2s is correct time. Using 3s to debug */
-  transition: 3s;
-}
-
-span:hover::after {
-  opacity: 0.7;
-}
-
-/*
-span {
-  display: flex;
-  position: relative;
-}
-
-span::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  background-color: green;
-  z-index: -1;
-  opacity: 0.7;
 
   transition: 0.2s;
 }
 
-span:hover::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  background-color: red;
-  z-index: -1;
-  opacity: 0.7;
-
-  transition-property: background-color;
-  transition: 0.2s ease-in-out;
+/* Activate background when mouse is hovering over wrapper */
+.wrapper:hover > .background {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da1f2;
 }
-*/
+
+.text {
+  padding-left: 20px;
+}
