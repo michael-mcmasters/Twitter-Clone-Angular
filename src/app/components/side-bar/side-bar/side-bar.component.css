@@ -1,10 +1,22 @@
-.twitter-icon {
+.twitter-icon-container {
   margin: 12px;
 }
 
-.twitter-icon > fa-icon {
+.twitter-icon-container > .twitter-icon {
   font-size: 30px;
   color: white;
+
+  transition: 2s;
+}
+
+.twitter-icon-container:hover {
+  margin: 0;
+  cursor: pointer;
+
+  background-color: rgba(29, 161, 242, 0.1);
+  width: fit-content;
+  border-radius: 100px;
+  padding: 12px;
 }
 
 .wrapper {
