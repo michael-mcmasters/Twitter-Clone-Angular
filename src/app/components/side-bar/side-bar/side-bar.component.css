@@ -7,23 +7,41 @@
   color: white;
 }
 
-/* ****** */
 .wrapper {
   display: flex;
   flex-direction: column;
 
-  width: 255px;
-  height: 46.25px;
-
   color: var(--primary-text-color);
   font-size: 19px;
   font-weight: bold;
+
+  width: 255px;
+  height: 46.25px;
+
+  cursor: pointer;
+}
+
+/* By using a wrapper over the container, the radius for :hover to activate is the same size for each element */
+/* But the background that appears can be a different size for each element. */
+.wrapper:hover > .container {
+  background: rgba(29, 161, 242, 0.1);
+  color: #1da1f2;
 }
 
 .container {
   display: flex;
   align-items: center;
   padding: 10px;
+
+  /* The size of the background that will appear on :hover */
+  width: fit-content;
+  border-radius: 30px; /* Makes edges of background round */
+  padding-left: 10px;
+  padding-right: 20px; /* (for some reason, twitter.com makes the right side a bit wider than the left side). */
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition: background 0.2s; /* Only apply transition to background. Let text color change immediately when mouse hovers for a smoother experience */
 }
 
 .container > mat-icon {
