@@ -1,5 +1,15 @@
-<div>
+<div class="twitter-icon">
   <fa-icon [icon]="faTwitter"></fa-icon>
 </div>
-<app-side-bar-item *ngFor="let s of sideBarItems" [sideBarItem]="s">
-</app-side-bar-item>
+<!-- <app-side-bar-item *ngFor="let s of sideBarItems" [sideBarItem]="s"> -->
+<!-- </app-side-bar-item> -->
+<div class="container">
+  <div>{{ sideBarItems[0].name }}</div>
+  <div>{{ sideBarItems[1].name }}</div>
+  <div>{{ sideBarItems[2].name }}</div>
+  <div>{{ sideBarItems[3].name }}</div>
+  <div class="bookmarks">{{ sideBarItems[4].name }}</div>
+  <div class="lists">{{ sideBarItems[5].name }}</div>
+  <div>{{ sideBarItems[6].name }}</div>
+  <div>{{ sideBarItems[7].name }}</div>
+</div>

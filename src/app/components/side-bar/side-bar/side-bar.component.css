@@ -1,9 +1,22 @@
-div {
+.twitter-icon {
   margin-top: 20px;
   padding-left: 10px;
 }
 
-fa-icon {
+.twitter-icon > fa-icon {
   font-size: 23px;
   color: white;
+}
+
+.container {
+  color: var(--primary-text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  .bookmarks,
+  .lists {
+    color: red;
+  }
 }
