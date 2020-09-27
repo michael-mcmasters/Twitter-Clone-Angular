@@ -1,7 +1,25 @@
 .twitter-icon-container {
-  margin: 12px;
+  /* margin: 12px; */
 }
 
+.twitter-icon-container:hover > .twitter-icon {
+  background-color: rgba(29, 161, 242, 0.1);
+}
+
+.twitter-icon {
+  font-size: 30px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border-radius: 100px; /* Makes edges of background round */
+  padding: 10px;
+
+  transition: background 0.2s; /* Only apply transition to background. Let text color change immediately when mouse hovers for a smoother experience */
+  cursor: pointer;
+}
+/*
 .twitter-icon-container > .twitter-icon {
   font-size: 30px;
   color: white;
@@ -18,7 +36,7 @@
   border-radius: 100px;
   padding: 12px;
 }
-
+*/
 .wrapper {
   display: flex;
   flex-direction: column;
