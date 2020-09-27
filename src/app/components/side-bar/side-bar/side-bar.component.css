@@ -18,15 +18,18 @@
   color: var(--primary-text-color);
 }
 
-.container > div {
+.container {
+  display: flex;
+  align-items: center;
   padding: 10px;
 }
 
+/*
 @media (max-height: 720px) {
   .container > div {
-    padding: 4px;
   }
 }
+*/
 
 @media (max-height: 630px) {
   .bookmarks,
