@@ -34,14 +34,21 @@
   padding-left: 24px;
 }
 
-/*
-@media (max-height: 720px) {
-  .container > div {
+/* If height is this size or larger, apply */
+@media (min-height: 720px) {
+  .wrapper {
+    height: 54.25px;
   }
 }
-*/
 
-/* Items disappear when screen is small */
+/* If height is this size or larger, apply */
+@media (min-height: 825px) {
+  .wrapper {
+    height: 60.25px;
+  }
+}
+
+/* If height is smaller than this, remove bookmarks and lists from sidebar */
 @media (max-height: 630px) {
   .bookmarks,
   .lists {
