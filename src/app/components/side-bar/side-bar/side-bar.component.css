@@ -34,23 +34,7 @@
   padding-left: 24px;
 }
 
-/* If height is this size or larger, apply */
-@media (min-height: 720px) {
-  .wrapper {
-    height: 46.25px;
-    padding: 4px;
-  }
-}
-
-/* If height is this size or larger, apply */
-@media (min-height: 825px) {
-  .wrapper {
-    height: 46.25px;
-    padding: 7px;
-  }
-}
-
-/* If height is smaller than this, remove bookmarks and lists from sidebar */
+/* If height < this, remove bookmark and list from sidebar */
 @media (max-height: 630px) {
   .bookmarks,
   .lists {
@@ -58,11 +42,18 @@
   }
 }
 
-/*
-@media (max-height: 400px) {
-  .bookmarks,
-  .lists {
-    color: red;
+/* If height is >= than this, apply */
+@media (min-height: 720px) {
+  .wrapper {
+    height: 46.25px;
+    padding: 4px;
   }
 }
-*/
+
+/* If height is >= than this, apply */
+@media (min-height: 825px) {
+  .wrapper {
+    height: 46.25px;
+    padding: 7px;
+  }
+}
