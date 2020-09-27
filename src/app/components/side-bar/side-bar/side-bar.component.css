@@ -37,14 +37,16 @@
 /* If height is this size or larger, apply */
 @media (min-height: 720px) {
   .wrapper {
-    height: 54.25px;
+    height: 46.25px;
+    padding: 4px;
   }
 }
 
 /* If height is this size or larger, apply */
 @media (min-height: 825px) {
   .wrapper {
-    height: 60.25px;
+    height: 46.25px;
+    padding: 7px;
   }
 }
 
