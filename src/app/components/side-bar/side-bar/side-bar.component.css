@@ -52,7 +52,7 @@
   padding-left: 24px;
 }
 
-/* If height < this, remove bookmark and list from sidebar */
+/* If window height < this, remove bookmark and list from sidebar */
 @media (max-height: 630px) {
   .bookmarks,
   .lists {
@@ -60,18 +60,16 @@
   }
 }
 
-/* If height is >= than this, apply */
+/* If window height is >= than this, apply */
 @media (min-height: 720px) {
   .wrapper {
-    height: 46.25px;
     padding: 4px;
   }
 }
 
-/* If height is >= than this, apply */
+/* If window height is >= than this, apply */
 @media (min-height: 825px) {
   .wrapper {
-    height: 46.25px;
     padding: 7px;
   }
 }
