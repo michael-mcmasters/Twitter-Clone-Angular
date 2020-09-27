@@ -1,10 +1,9 @@
 .twitter-icon {
-  margin-top: 20px;
-  padding-left: 10px;
+  margin: 12px;
 }
 
 .twitter-icon > fa-icon {
-  font-size: 23px;
+  font-size: 30px;
   color: white;
 }
 
@@ -15,9 +14,9 @@
 
   width: 250px;
 
-  font-weight: bold;
-  font-size: 19px;
   color: var(--primary-text-color);
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .container {
@@ -38,6 +37,7 @@
 }
 */
 
+/* Items disappear when screen is small */
 @media (max-height: 630px) {
   .bookmarks,
   .lists {
