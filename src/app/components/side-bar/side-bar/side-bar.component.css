@@ -81,3 +81,9 @@
     color: red;
   }
 }
+
+button {
+  background-color: blue;
+  width: 240px;
+  height: 40px;
+}
