@@ -8,14 +8,24 @@
   color: white;
 }
 
-.container {
-  color: var(--primary-text-color);
+/* ****** */
+.wrapper {
   display: flex;
   flex-direction: column;
+
+  font-weight: bold;
+  font-size: 19px;
+  color: var(--primary-text-color);
 }
 
 .container > div {
-  min-height: 60px;
+  padding: 10px;
+}
+
+@media (max-height: 720px) {
+  .container > div {
+    padding: 4px;
+  }
 }
 
 @media (max-height: 630px) {

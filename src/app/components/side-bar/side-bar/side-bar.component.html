@@ -3,13 +3,60 @@
 </div>
 <!-- <app-side-bar-item *ngFor="let s of sideBarItems" [sideBarItem]="s"> -->
 <!-- </app-side-bar-item> -->
-<div class="container">
-  <div>{{ sideBarItems[0].name }}</div>
-  <div>{{ sideBarItems[1].name }}</div>
-  <div>{{ sideBarItems[2].name }}</div>
-  <div>{{ sideBarItems[3].name }}</div>
-  <div class="bookmarks">{{ sideBarItems[4].name }}</div>
-  <div class="lists">{{ sideBarItems[5].name }}</div>
-  <div>{{ sideBarItems[6].name }}</div>
-  <div>{{ sideBarItems[7].name }}</div>
+<div class="wrapper">
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[0].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[0].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[1].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[1].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[2].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[2].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[3].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[3].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[4].iconName }}
+    </mat-icon>
+    <div class="bookmarks">{{ sideBarItems[4].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[5].iconName }}
+    </mat-icon>
+    <div class="lists">{{ sideBarItems[5].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[6].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[6].name }}</div>
+  </div>
+
+  <div class="container">
+    <mat-icon>
+      {{ sideBarItems[7].iconName }}
+    </mat-icon>
+    <div>{{ sideBarItems[7].name }}</div>
+  </div>
 </div>
