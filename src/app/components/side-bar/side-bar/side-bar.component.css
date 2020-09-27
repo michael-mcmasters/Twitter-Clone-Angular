@@ -52,7 +52,7 @@
   padding-left: 24px;
 }
 
-/* If window height < this, remove bookmark and list from sidebar */
+/* If window height < this, remove "bookmarks" and "lists" from sidebar */
 @media (max-height: 630px) {
   .bookmarks,
   .lists {
@@ -60,16 +60,24 @@
   }
 }
 
-/* If window height is >= than this, apply */
+/* If window height is >= this, increase padding between texts */
 @media (min-height: 720px) {
   .wrapper {
     padding: 4px;
   }
 }
 
-/* If window height is >= than this, apply */
+/* If window height is >= this, increase padding between texts */
 @media (min-height: 825px) {
   .wrapper {
     padding: 7px;
+  }
+}
+
+/* If window width is <= this, only display icons (hide text) */
+@media (max-width: 1282px) {
+  .container > div {
+    display: none;
+    color: red;
   }
 }
