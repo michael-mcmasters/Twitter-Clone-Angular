@@ -2,13 +2,14 @@
   font-size: 30px;
   color: white;
 
+  /* For the background that appears on :hover */
   display: flex;
   align-items: center;
   width: fit-content;
-  border-radius: 100px; /* Makes edges of background round */
+  border-radius: 100px;
   padding: 10px;
 
-  transition: background 0.2s; /* Only apply transition to background. Let text color change immediately when mouse hovers for a smoother experience */
+  transition: background 0.2s;
   cursor: pointer;
 }
 
@@ -72,14 +73,16 @@
 /* If window height is >= this, increase padding between texts */
 @media (min-height: 720px) {
   .wrapper {
-    padding: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 
 /* If window height is >= this, increase padding between texts */
 @media (min-height: 825px) {
   .wrapper {
-    padding: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 }
 
