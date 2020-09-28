@@ -5,32 +5,53 @@
 
 .left-side-container {
   position: relative;
-  /* left: 45px; */
-  right: 20px;
   margin-right: 40px;
-
-  /* If you don't set the width, then any padding/margin you give to children inside this div will change the width, which pushes other divs around it away. */
-  /* If you do set a width. Then the size is fixed. And any padding/margin in the children will simply overflow out of the div, but will not push other divs out of the way. */
-  /* Tldr: If you don't want other divs around this div to move when children set padding/margin. Set this div's size. */
-  /* width: 255px; */
 }
 
 .center-container {
   position: relative;
   right: 20px;
-  /* left: 105px; */
 
   width: 599px;
 }
 
 .right-side-container {
   position: relative;
-  /* left: 134px; */
   left: 10px;
 
   width: 348px;
   height: 400px;
   border: 1px solid blue;
+}
+
+/* max-width means if width is less than this.
+*
+*/
+
+@media (max-width: 1000px) {
+  .left-side-container {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1022px) {
+  .left-side-container {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1095px) {
+  .right-side-container {
+    left: 0px;
+    width: 290px;
+    border: 1px solid red;
+  }
+}
+
+@media (max-width: 1005px) {
+  .right-side-container {
+    display: none;
+  }
 }
 
 /* This adds a scroll bar while I line things up. Will delete before project is finished. */
