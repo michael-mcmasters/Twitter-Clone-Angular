@@ -25,7 +25,7 @@
   font-size: 19px;
   font-weight: bold;
 
-  width: 255px;
+  /* width: 255px; */
   height: 46.25px;
 
   cursor: pointer;
@@ -62,11 +62,32 @@
   padding-left: 24px;
 }
 
-/* If window width is <= this, only display icons (hide text) */
+button {
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 100px;
+  width: 229.5px;
+  height: 50px;
+  margin-top: 10px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: blue;
+}
+
+/* If window width is <= this, only display icons (hide text) ... Make button smaller */
 @media (max-width: 1282px) {
   .container > div {
     display: none;
     color: red;
+  }
+
+  button {
+    height: 50px;
+    width: 50px;
   }
 }
 
@@ -92,11 +113,4 @@
     padding-top: 7px;
     padding-bottom: 7px;
   }
-}
-
-button {
-  background-color: blue;
-  width: 240px;
-  height: 40px;
-  border-radius: 100px;
 }
