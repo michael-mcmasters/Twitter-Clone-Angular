@@ -14,7 +14,7 @@
 }
 
 .twitter-icon:hover {
-  background-color: rgba(29, 161, 242, 0.1);
+  background-color: var(--sidebar-text-background-color);
 }
 
 .wrapper {
@@ -34,7 +34,7 @@
 /* By using a wrapper over the container, the radius for :hover to activate is the same size for each element */
 /* But the background that appears can be a different size for each element. */
 .wrapper:hover > .container {
-  background: rgba(29, 161, 242, 0.1);
+  background: var(--sidebar-text-background-color);
   color: #1da1f2;
 }
 
