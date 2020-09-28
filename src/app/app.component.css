@@ -4,7 +4,9 @@
 }
 
 .left-side-container {
-  position: relative;
+  position: sticky;
+  align-self: flex-start; /* Need this for position sticky to work when also using flexbox - Source: https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
+  top: 0;
   margin-right: 40px;
 }
 
@@ -24,10 +26,7 @@
   border: 1px solid blue;
 }
 
-/* max-width means if width is less than this.
-*
-*/
-
+/* max-width means if width is less than this. */
 @media (max-width: 1000px) {
   .left-side-container {
     margin-left: 40px;
