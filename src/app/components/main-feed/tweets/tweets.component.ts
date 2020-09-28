@@ -39,7 +39,70 @@ export class TweetsComponent implements OnInit {
         postAge: 6,
         profileImage: "./assets/images/chris-avatar.jpg",
         message: "I run this town"
-      }
+      },
+
+      {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      },
+      {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      }, {
+        name: 'Stephy Cheeseman',
+        userName: 'Sparklebunny',
+        postAge: 6,
+        profileImage: "./assets/images/stephy-avatar.jpg",
+        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+      },
     ]
   }
 
