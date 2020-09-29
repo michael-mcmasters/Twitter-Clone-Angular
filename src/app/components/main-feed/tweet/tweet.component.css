@@ -50,8 +50,13 @@ header > #name {
   color: var(--primary-text-color);
 }
 
-header > * {
+header > span {
   margin-right: 4px;
+}
+
+header > .arrow-icon-container {
+  color: red;
+  margin-left: auto; /* Will automatically fill space with margin and move item to the end of the line */
 }
 
 .interaction-bar {
