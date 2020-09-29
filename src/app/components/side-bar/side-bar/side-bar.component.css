@@ -13,6 +13,7 @@
   cursor: pointer;
 }
 
+.twitter-icon:focus,
 .twitter-icon:hover {
   background-color: var(--sidebar-text-background-color);
 }
@@ -32,6 +33,7 @@
 
 /* By using a wrapper over the container, the radius for :hover to activate is the same size for each element */
 /* But the background that appears can be a different size for each element. */
+.wrapper:focus > .container,
 .wrapper:hover > .container {
   background: var(--sidebar-text-background-color);
   color: #1da1f2;
@@ -73,6 +75,7 @@ button {
   transition: 0.2s;
 }
 
+button:focus,
 button:hover {
   background-color: blue;
 }
