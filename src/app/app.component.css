@@ -18,11 +18,12 @@
 }
 
 .right-side-container {
+  /* Will stop scrolling once top is off of screen by x amount of pixels */
   position: sticky;
-  top: 200px;
-  margin-top: 600px;
+  top: -200px;
+
   width: 388px;
-  height: 400px;
+  height: 800px;
   border: 1px solid blue;
 }
 
