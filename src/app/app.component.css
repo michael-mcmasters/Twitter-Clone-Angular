@@ -12,16 +12,14 @@
 
 .center-container {
   position: relative;
-  right: 20px;
+  margin-right: 30px;
 
-  width: 599px;
+  width: 665px;
 }
 
 .right-side-container {
   position: relative;
-  left: 10px;
-
-  width: 348px;
+  width: 388px;
   height: 400px;
   border: 1px solid blue;
 }
