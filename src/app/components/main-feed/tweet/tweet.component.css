@@ -21,7 +21,6 @@
   cursor: pointer;
 }
 
-/* I believe focus is called when you tab over item instead of mousing over it. */
 .container:focus,
 .container:hover {
   background-color: var(--background-color-hover);
@@ -62,7 +61,8 @@ header > .arrow-icon-container {
 .interaction-bar {
   display: flex;
   justify-content: space-between;
-  width: 83.4%;
   margin-top: 10px;
+  width: 83.4%;
   color: var(--secondary-text-color);
+  font-size: 18.75px;
 }
