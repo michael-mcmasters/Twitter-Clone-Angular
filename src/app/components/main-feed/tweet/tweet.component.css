@@ -41,6 +41,7 @@
 
 header {
   display: flex;
+  width: 574px;
   color: var(--secondary-text-color);
 }
 
