@@ -18,7 +18,9 @@
 }
 
 .right-side-container {
-  position: relative;
+  position: sticky;
+  top: 200px;
+  margin-top: 600px;
   width: 388px;
   height: 400px;
   border: 1px solid blue;
