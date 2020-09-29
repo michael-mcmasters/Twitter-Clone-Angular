@@ -1,6 +1,6 @@
 .twitter-icon {
   font-size: 30px;
-  color: white;
+  color: var(--twitter-icon-color);
 
   /* This is the background that will appear on :hover */
   display: flex;
@@ -25,7 +25,6 @@
   font-size: 19px;
   font-weight: bold;
 
-  /* width: 255px; */
   height: 46.25px;
 
   cursor: pointer;
