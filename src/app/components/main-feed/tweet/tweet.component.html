@@ -1,5 +1,5 @@
 <div class="container">
-  <img src="{{ tweet.profileImage }}" />
+  <img src="{{ tweet.profileImage }}" class="profile-image" />
   <div>
     <header>
       <span id="name">{{ tweet.name }}</span>
@@ -10,9 +10,11 @@
     <main>
       <div>{{ tweet.message }}</div>
     </main>
-    <fa-icon [icon]="faComment" class=""></fa-icon>
-    <fa-icon [icon]="faRetweet" class=""></fa-icon>
-    <fa-icon [icon]="faHeart" class=""></fa-icon>
-    <fa-icon [icon]="faShare" class=""></fa-icon>
+    <div>
+      <fa-icon [icon]="faComment" class=""></fa-icon>
+      <fa-icon [icon]="faRetweet" class=""></fa-icon>
+      <fa-icon [icon]="faHeart" class=""></fa-icon>
+      <fa-icon [icon]="faShare" class=""></fa-icon>
+    </div>
   </div>
 </div>

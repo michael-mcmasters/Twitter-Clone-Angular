@@ -27,11 +27,16 @@
   background-color: var(--background-color-hover);
 }
 
-img {
+.profile-image {
   width: 3rem;
   height: 3rem;
   margin-right: 10px;
   border-radius: 50%; /* turns square picture into circle */
+  transition: 0.2s;
+}
+
+.profile-image:hover {
+  opacity: 0.9;
 }
 
 header {
@@ -39,12 +44,12 @@ header {
   color: var(--secondary-text-color);
 }
 
-#name {
+header > #name {
   font-weight: bold;
   color: var(--primary-text-color);
 }
 
 /* push words away */
-span {
+header > span {
   margin-right: 4px;
 }
