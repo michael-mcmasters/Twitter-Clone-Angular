@@ -55,7 +55,7 @@ header > span {
 }
 
 header > .arrow-icon-container {
-  color: red;
+  color: var(--secondary-text-color);
   margin-left: auto; /* Will automatically fill space with margin and move item to the end of the line */
 }
 
