@@ -18,13 +18,22 @@
 }
 
 .right-side-container {
-  /* Will stop scrolling once top is off of screen by x amount of pixels */
+  /* Will stick to top of screen */
   position: sticky;
-  top: -200px;
+  top: 0;
 
   width: 388px;
-  height: 800px;
+  height: 600px;
   border: 1px solid blue;
+}
+
+/* If screen can't fit all of div */
+/* Div will stick a little bit above of the top of screen so that you can scroll to bottom */
+@media (max-height: 600px) {
+  .right-side-container {
+    top: -200px;
+    border: 1px solid red;
+  }
 }
 
 /* max-width means if width is less than this. */
