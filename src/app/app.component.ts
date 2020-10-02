@@ -1,5 +1,4 @@
 import { Component, Inject } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -9,57 +8,59 @@ import { DOCUMENT } from '@angular/common';
 export class AppComponent {
   title = 'learning-angular-project';
   prevScrollPosition: number;
+  amountScrolledSinceLastCall: Function;
 
-  constructor(
-    @Inject(DOCUMENT) private document: Document,
-  ) { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.amountScrolledSinceLastCall = this.getScrollSpeed();
+    this.onScrollListener();
+  }
+
+  // Makes sidebar on right scroll even when mouse isn't hovering over it.
+  onScrollListener(): void {
     window.addEventListener("scroll", () => {
-      console.log("heyoo");
       const scrollPosition = window.scrollY;
-      const amountScrolledSinceLastCall = getScrollSpeed();
       const element = document.getElementById("right-side-container");
+
+      // Scrolled down
       if (scrollPosition > this.prevScrollPosition) {
-        // Scrolled down
-        element.scrollBy(0, amountScrolledSinceLastCall);
-      } else if (scrollPosition < this.prevScrollPosition) {
-        // Scrolled up
-        element.scrollBy(0, amountScrolledSinceLastCall);
+        element.scrollBy(0, this.amountScrolledSinceLastCall());
+      }
+      // Scrolled up
+      else if (scrollPosition < this.prevScrollPosition) {
+        element.scrollBy(0, this.amountScrolledSinceLastCall());
       }
       this.prevScrollPosition = scrollPosition;
-    });
-
-    // Function from: https://stackoverflow.com/questions/22593286/detect-measure-scroll-speed.
-    // Think of this function object as a class. It runs once on start-up and initiates its variables and functions.
-    // When you call it with getScrollSpeed(), it jumps to the function at its return.
-    var getScrollSpeed = (function (settings) {
-      settings = settings || {};
-
-      var lastPos, newPos, timer, delta,
-        delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
-
-      console.log("hey");
-      function clear() {
-        lastPos = null;
-        delta = 0;
-      }
-
-      clear();
-
-      // When you call getScrollSpeed(), it goes to this function and returns it. All of the code above only runs when program initiates.
-      return function () {
-        newPos = window.scrollY;
-        if (lastPos != null) { // && newPos < maxScroll 
-          delta = newPos - lastPos;
-        }
-        lastPos = newPos;
-        clearTimeout(timer);
-        timer = setTimeout(clear, delay);
-        return delta;
-      };
-    })();
-    // this () at the end tells the compiler to run getScrollSpeed() on initiation. Notice the entire function is wrapped in parenthesis.
-    // This is called an "Immediately Invoked Function Expressions" or "Self Executing Function." It's used like classes to keep variables localized so they don't conflict with other libraries.
+    })
   }
+
+  // This is a closure (see notes). getScrollSpeed() returns the function inside of it.
+  // When the inner function is called, it can access the properties of its outer function, getScrollSpeed.
+  // (Function based off of: https://stackoverflow.com/questions/22593286/detect-measure-scroll-speed).
+  getScrollSpeed(): Function {
+    var lastPos, newPos, timer, delta,
+      delay = 50; // in "ms" (higher means lower fidelity )
+
+    function clear() {
+      lastPos = null;
+      delta = 0;
+    }
+
+    clear();
+
+    // This inner function can access the properties above when called.
+    return function amountScrolledSinceLastCall() {
+      newPos = window.scrollY;
+      if (lastPos != null) {
+        delta = newPos - lastPos;
+      }
+      lastPos = newPos;
+      clearTimeout(timer);
+      timer = setTimeout(clear, delay);
+      return delta;
+    };
+  };
 }
+
