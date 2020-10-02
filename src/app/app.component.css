@@ -23,12 +23,12 @@
   top: 0;
 
   width: 388px;
-  height: 100vh;
-  /* border: 1px solid blue; */
+  height: 100vh; /* Container must have height to stick. Set it to the size of the viewport */
 
-  overflow: scroll;
+  overflow: scroll; /* Div sticks to top of page. Javascript class will scroll it up and down (if it overflow) */
 }
 
+/* Hide scroll bar */
 #right-side-container::-webkit-scrollbar {
   width: 0;
 }
