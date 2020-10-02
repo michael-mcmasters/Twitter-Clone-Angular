@@ -17,7 +17,7 @@
   width: 665px;
 }
 
-.right-side-container {
+#right-side-container {
   /* Will stick to top of screen */
   position: sticky;
   top: 0;
@@ -29,7 +29,7 @@
   overflow: scroll;
 }
 
-.right-side-container::-webkit-scrollbar {
+#right-side-container::-webkit-scrollbar {
   width: 0;
 }
 
