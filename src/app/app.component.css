@@ -1,16 +1,16 @@
-.container {
+#container {
   display: flex;
   justify-content: center;
 }
 
-.left-side-container {
+#left-side-container {
   position: sticky;
   align-self: flex-start; /* Need this for position sticky to work when also using flexbox - Source: https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
   top: 0;
   margin-right: 40px;
 }
 
-.center-container {
+#center-container {
   position: relative;
   margin-right: 30px;
 
@@ -36,7 +36,7 @@
 /* If screen can't fit all of div */
 /* Div will stick a little bit above of the top of screen so that you can scroll to bottom */
 @media (max-height: 600px) {
-  .right-side-container {
+  #right-side-container {
     top: -200px;
     border: 1px solid red;
   }
@@ -44,19 +44,19 @@
 
 /* max-width means if width is less than this. */
 @media (max-width: 1000px) {
-  .left-side-container {
+  #left-side-container {
     margin-left: 40px;
   }
 }
 
 @media (max-width: 1022px) {
-  .left-side-container {
+  #left-side-container {
     margin-right: 30px;
   }
 }
 
 @media (max-width: 1095px) {
-  .right-side-container {
+  #right-side-container {
     left: 0px;
     width: 290px;
     border: 1px solid red;
@@ -64,7 +64,7 @@
 }
 
 @media (max-width: 1005px) {
-  .right-side-container {
+  #right-side-container {
     display: none;
   }
 }
