@@ -33,15 +33,6 @@
   width: 0;
 }
 
-/* If screen can't fit all of div */
-/* Div will stick a little bit above of the top of screen so that you can scroll to bottom */
-@media (max-height: 600px) {
-  #right-side-container {
-    top: -200px;
-    border: 1px solid red;
-  }
-}
-
 /* max-width means if width is less than this. */
 @media (max-width: 1000px) {
   #left-side-container {
