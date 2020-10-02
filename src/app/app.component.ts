@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'learning-angular-project';
+
+  faStar = faStar;
+
   prevScrollPosition: number;
   amountScrolledSinceLastCall: Function;
 
