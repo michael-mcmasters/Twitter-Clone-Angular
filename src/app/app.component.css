@@ -48,7 +48,6 @@
   align-self: center;
   color: #1da1f2;
   font-size: 19px;
-  style: far;
 }
 
 /* Javascript class makes this scrollable (if overflowing) even when mouse isn't hovering over it. */

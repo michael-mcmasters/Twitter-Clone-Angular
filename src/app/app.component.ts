@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar } from '@fortawesome/free-regular-svg-icons'
 
 @Component({
   selector: 'app-root',
