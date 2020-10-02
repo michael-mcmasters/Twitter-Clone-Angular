@@ -17,35 +17,35 @@ export class SideBarComponent implements OnInit {
     this.sideBarItems = [
       {
         name: "Home",
-        iconName: "home",
+        iconName: "home_outline",
       },
       {
         name: "Explore",
-        iconName: "search",
+        iconName: "search_outline",
       },
       {
         name: "Notifications",
-        iconName: "notifications",
+        iconName: "notifications_outline",
       },
       {
         name: "Messages",
-        iconName: "mail",
+        iconName: "mail_outline",
       },
       {
         name: "Bookmarks",
-        iconName: "note",
+        iconName: "note_outline",
       },
       {
         name: "Lists",
-        iconName: "subject",
+        iconName: "subject_outline",
       },
       {
         name: "Profile",
-        iconName: "perm_identity",
+        iconName: "perm_identity_outline",
       },
       {
         name: "More",
-        iconName: "more_horiz",
+        iconName: "more_horiz_outline",
       }
     ];
   }
