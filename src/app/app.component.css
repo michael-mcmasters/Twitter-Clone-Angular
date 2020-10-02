@@ -17,18 +17,20 @@
   width: 665px;
 }
 
+/* Javascript class makes this scrollable (if overflowing) even when mouse isn't hovering over it. */
 #right-side-container {
   /* Will stick to top of screen */
   position: sticky;
   top: 0;
 
   width: 388px;
-  height: 100vh; /* Container must have height to stick. Set it to the size of the viewport */
+  height: 100vh; /* Must specify height for this to be sticky. Otherwise it auto sets height to the height of the entire site */
 
-  overflow: scroll; /* Div sticks to top of page. Javascript class will scroll it up and down (if it overflow) */
+  overflow: scroll;
+  scrollbar-width: none; /* Hide scroll bar in Firefox */
 }
 
-/* Hide scroll bar */
+/* Hide scroll bar in Chrome and Edge*/
 #right-side-container::-webkit-scrollbar {
   width: 0;
 }
