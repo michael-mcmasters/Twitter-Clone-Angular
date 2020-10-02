@@ -18,19 +18,27 @@
 }
 
 #top-nav {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(
+    --background-color
+  ); /* Give background color so it appears over elements scrolling under it */
+
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   height: 58px;
+
+  cursor: pointer;
 }
 
 #top-nav > div {
   padding: 15px;
-  font-size: 21px;
-  color: var(--primary-text-color);
-  font-weight: 800;
   line-height: 1.3125;
+  color: var(--primary-text-color);
+  font-size: 21px;
+  font-weight: 800;
 }
 
 /* Javascript class makes this scrollable (if overflowing) even when mouse isn't hovering over it. */
