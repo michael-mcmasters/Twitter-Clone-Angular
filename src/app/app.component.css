@@ -24,7 +24,13 @@
 
   width: 388px;
   height: 600px;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+
+  overflow: scroll;
+}
+
+.right-side-container::-webkit-scrollbar {
+  width: 0;
 }
 
 /* If screen can't fit all of div */
