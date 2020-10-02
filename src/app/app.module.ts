@@ -12,9 +12,10 @@ import { SideBarComponent } from './components/side-bar/side-bar/side-bar.compon
 import { SideBarItemComponent } from './components/side-bar/side-bar-item/side-bar-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WhatsHappeningComponent } from './components/whats-happening/whats-happening/whats-happening.component';
+import { TweetComposerComponent } from './components/tweet-composer/tweet-composer/tweet-composer.component';
 
 @NgModule({
-  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, SideBarItemComponent, WhatsHappeningComponent],
+  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, SideBarItemComponent, WhatsHappeningComponent, TweetComposerComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
