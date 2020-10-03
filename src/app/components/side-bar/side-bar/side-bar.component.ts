@@ -11,41 +11,41 @@ export class SideBarComponent implements OnInit {
   sideBarItems: SideBarItem[];
   faTwitter = faTwitter;
 
+  // TODO: Icons are using their outline version. Make them use normal (bolder) version when active.
+  // (See note in .html for how)
   constructor() {
-    console.log("SIDEBAR RUNNING");
-
     this.sideBarItems = [
       {
         name: "Home",
-        iconName: "home_outline",
+        iconName: "home",
       },
       {
         name: "Explore",
-        iconName: "search_outline",
+        iconName: "search",
       },
       {
         name: "Notifications",
-        iconName: "notifications_outline",
+        iconName: "notifications",
       },
       {
         name: "Messages",
-        iconName: "mail_outline",
+        iconName: "mail",
       },
       {
         name: "Bookmarks",
-        iconName: "note_outline",
+        iconName: "note",
       },
       {
         name: "Lists",
-        iconName: "subject_outline",
+        iconName: "subject",
       },
       {
         name: "Profile",
-        iconName: "perm_identity_outline",
+        iconName: "perm_identity",
       },
       {
         name: "More",
-        iconName: "more_horiz_outline",
+        iconName: "more_horiz",
       }
     ];
   }
