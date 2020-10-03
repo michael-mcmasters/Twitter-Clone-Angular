@@ -34,6 +34,10 @@ export class AppComponent {
       }
       // Scrolled up
       else if (scrollPosition < this.prevScrollPosition) {
+        // When user scrolls up too high on Safari and the browser auto scrolls down, this prevents right side bar from scrolling down too.
+        if (scrollPosition <= 0) {
+          return;
+        }
         element.scrollBy(0, this.amountScrolledSinceLastCall());
       }
       this.prevScrollPosition = scrollPosition;
