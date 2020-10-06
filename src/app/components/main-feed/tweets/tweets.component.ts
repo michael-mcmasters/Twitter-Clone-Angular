@@ -31,7 +31,7 @@ export class TweetsComponent implements OnInit {
         userName: 'Sparklebunny',
         postAge: 6,
         profileImage: "./assets/images/stephy-avatar.jpg",
-        message: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque quasi dolore incidunt! Laudantium ullam beatae, corporis enim praesentium sint nesciunt quisquam consequuntur porro expedita necessitatibus cupiditate, voluptatum est suscipit nemo."
+        message: "mustache man is very cute :{ . -hackerman",
       },
       {
         name: 'Chris Beardsley',
