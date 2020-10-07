@@ -1,6 +1,4 @@
-/* When inspecting a website to get its width, the number isn't accurate. Subtract the padding and enter that as the width, because padding makes a div bigger. */
-/* For example, inspecting a tweet on Twitter.com gives a width is 598. But it has padding of 15 on the left and 15 on the right. So it's actual width is 598-15-15 = 568. */
-.container {
+.tweet-container {
   display: flex;
   border-left: 1px solid;
   border-right: 1px solid;
@@ -10,21 +8,22 @@
   color: var(--primary-text-color);
   font-size: 15px;
 
-  /* Squeezes everything closer inside the div borders. The div size is set somewhere else. */
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
 
-  /* makes focus/hover transition over 0.2 seconds instead of instantly */
   transition: 0.2s;
   cursor: pointer;
 }
 
-.container:focus,
-.container:hover {
+.tweet-container:focus,
+.tweet-container:hover {
   background-color: var(--background-color-hover);
 }
+
+
+
 
 .profile-image {
   width: 3rem;
@@ -38,27 +37,34 @@
   opacity: 0.9;
 }
 
-header {
-  display: flex;
-  width: 574px;
-  color: var(--secondary-text-color);
+
+
+
+
+.content-container {
+  width: 100%;
 }
 
-header > #name {
-  font-weight: bold;
-  color: var(--primary-text-color);
+header {
+  display: flex;
+  color: var(--secondary-text-color);
 }
 
 header > span {
   margin-right: 4px;
 }
 
-header > .arrow-icon-container {
-  color: var(--secondary-text-color);
-  margin-left: auto; /* Will automatically fill space with margin and move item to the end of the line */
+header > .name {
+  font-weight: bold;
+  color: var(--primary-text-color);
 }
 
-.interaction-bar {
+header > mat-icon {
+  color: var(--secondary-text-color);
+  margin-left: auto;
+}
+
+footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;

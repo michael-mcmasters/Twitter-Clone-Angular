@@ -1,21 +1,21 @@
-<div class="container">
+<div class="tweet-container">
   <img src="{{ tweet.profileImage }}" class="profile-image" />
-  <div>
+  <div class="content-container">
     <header>
-      <span id="name">{{ tweet.name }}</span>
+      <span class="name">{{ tweet.name }}</span>
       <span>@{{ tweet.userName }}</span>
       <span>·</span>
       <span>{{ tweet.postAge }}h</span>
-      <mat-icon class="arrow-icon-container">keyboard_arrow_down</mat-icon>
+      <mat-icon>keyboard_arrow_down</mat-icon>
     </header>
     <main>
       <div>{{ tweet.message }}</div>
     </main>
-    <div class="interaction-bar">
+    <footer>
       <fa-icon [icon]="faComment" class=""></fa-icon>
       <fa-icon [icon]="faRetweet" class=""></fa-icon>
       <fa-icon [icon]="faHeart" class=""></fa-icon>
       <fa-icon [icon]="faShare" class=""></fa-icon>
-    </div>
+    </footer>
   </div>
 </div>
