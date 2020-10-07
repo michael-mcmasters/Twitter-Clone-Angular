@@ -1,23 +1,23 @@
-#container {
+.container {
   display: flex;
   justify-content: center;
 }
 
-#left-side-container {
+.left-side-container {
   position: sticky;
   align-self: flex-start; /* Need this for position sticky to work when also using flexbox - Source: https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
   top: 0;
   margin-right: 40px;
 }
 
-#center-container {
+.center-container {
   position: relative;
   margin-right: 30px;
 
    width: 598px;
 }
 
-#top-nav {
+.top-nav {
   display: flex;
   position: sticky;
   top: 0;
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-#top-nav > div {
+.top-nav > div {
   padding: 15px;
   line-height: 1.3125;
   color: var(--primary-text-color);
@@ -42,7 +42,7 @@
   font-weight: 800;
 }
 
-#top-nav > fa-icon {
+.top-nav > fa-icon {
   margin-left: auto;
   margin-right: 15px;
   align-self: center;
@@ -70,13 +70,13 @@
 
 /* max-width means if width is less than this. */
 @media (max-width: 1000px) {
-  #left-side-container {
+  .left-side-container {
     margin-left: 40px;
   }
 }
 
 @media (max-width: 1022px) {
-  #left-side-container {
+  .left-side-container {
     margin-right: 30px;
   }
 }
