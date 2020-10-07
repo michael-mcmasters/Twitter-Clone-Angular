@@ -16,27 +16,27 @@ export class AppComponent {
   }
 
   ngOnInit(): void {
-    const sideBarElement = document.getElementById("right-side-container");
+    const rightSideContainer = document.getElementById("right-side-container");
     const getAmountScrolled = this.getAmountScrolledClosure();
 
     window.addEventListener("scroll", () => {
-      this.scrollSideBar(sideBarElement, getAmountScrolled);
+      this.scrollSideBar(rightSideContainer, getAmountScrolled);
     })
   }
 
   // Function makes right sidebar scroll when mouse scrolls, even if it isn't hovering over it. (Only if overflowing.)
   // Scroll listener is called multiple times per scroll wheel "tick". And amountScrolled will give multiple different values per every "tick". Console.log it to debug.
-  scrollSideBar(sideBarElement: HTMLElement, getAmountScrolled: Function): void {
+  scrollSideBar(rightSideContainer: HTMLElement, getAmountScrolled: Function): void {
     const scrollBarPosition = window.scrollY;
     const amountScrolled = getAmountScrolled();
 
     // If scroll bar position is less than 0, Safari will pull the page back up. This check makes sure the element does not scroll when that happens.
     if (scrollBarPosition >= 0) {
       if (scrollBarPosition > this.prevScrollBarPosition) {
-        sideBarElement.scrollBy(0, amountScrolled); // user scrolled down
+        rightSideContainer.scrollBy(0, amountScrolled); // user scrolled down
       }
       else if (scrollBarPosition < this.prevScrollBarPosition) {
-        sideBarElement.scrollBy(0, amountScrolled); // user scrolled up
+        rightSideContainer.scrollBy(0, amountScrolled); // user scrolled up
       }
     }
     this.prevScrollBarPosition = scrollBarPosition;
