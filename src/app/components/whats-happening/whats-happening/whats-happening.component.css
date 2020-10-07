@@ -1,9 +1,21 @@
-section {
-  border: 1px solid green;
+.light-theme {
+  --background-color: #ffffff;
+}
+
+.dark-theme {
+  --background-color: #192734;
+}
+
+div {
+  /* border: 1px solid green; */
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  /* width: 80%; */
+  width: 348px;
   height: 350px;
+
+  background-color: var(--background-color);
+  border-radius: 5%;
 }

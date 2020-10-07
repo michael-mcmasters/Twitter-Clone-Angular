@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./whats-happening.component.css']
 })
 export class WhatsHappeningComponent implements OnInit {
-
   constructor() { }
 
   ngOnInit(): void {
