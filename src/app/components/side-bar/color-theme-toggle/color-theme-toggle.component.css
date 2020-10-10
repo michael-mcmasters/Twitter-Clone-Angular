@@ -1,4 +1,5 @@
 button {
+  position: fixed;
+  top: 75vh;
   margin: 20px;
-  position: 50vh;
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SideBarItem } from 'src/app/models/sideBarItem';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { ColorThemeService } from 'src/app/services/color-theme.service';
+import { Theme } from 'src/app/models/theme';
 
 @Component({
   selector: 'app-side-bar',
@@ -8,12 +10,18 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
   styleUrls: ['./side-bar.component.css']
 })
 export class SideBarComponent implements OnInit {
+  colorTheme: Theme;
+
   sideBarItems: SideBarItem[];
   faTwitter = faTwitter;
 
   // TODO: Icons are using their outline version. Make them use normal (bolder) version when active.
   // (See note in .html for how)
-  constructor() {
+  constructor(private colorThemeService: ColorThemeService) {
+    this.colorThemeService.getTheme().subscribe((newTheme) => {
+      this.colorTheme = newTheme;
+    });
+
     this.sideBarItems = [
       {
         name: "Home",

@@ -10,9 +10,6 @@
   --primary-text-color: #222527;
   --secondary-text-color: #232f39;
   --border-color: #38444d;
-
-  --twitter-icon-color: #1da1f2;
-  --sidebar-text-background-color: rgba(29, 161, 242, 0.1);
 }
 
 .dark-theme {
@@ -22,9 +19,6 @@
   --primary-text-color: #ffffff;
   --secondary-text-color: #8796a0;
   --border-color: #38444d;
-
-  --twitter-icon-color: white;
-  --sidebar-text-background-color: rgba(29, 161, 242, 0.1);
 }
 
 * {
