@@ -1,14 +1,19 @@
-<fa-icon [icon]="faTwitter" class="twitter-icon" [ngClass]="colorTheme"></fa-icon>
+<fa-icon
+  [icon]="faTwitter"
+  class="twitter-icon"
+  [ngClass]="colorTheme"
+></fa-icon>
 
 <div *ngFor="let s of sideBarItems; let i = index">
-  <div class="wrapper" [ngClass]="colorTheme">
-  <div class="container">
-    <!-- TODO: Use bold icon when tabs are open. To do so, just remove the "fontset" class -->
-    <mat-icon fontSet="material-icons-outlined">
-      {{ s.iconName }}</mat-icon>
-    <div>{{ s.name }}</div>
+  <div [ngClass]="['wrapper', colorTheme, s.CSSClass]">
+    <div class="container">
+      <mat-icon fontSet="material-icons-outlined">
+        <!-- TODO: Use bold icon when tabs are open. To do so, just remove the "fontset" class -->
+        {{ s.iconName }}
+      </mat-icon>
+      <div>{{ s.name }}</div>
+    </div>
   </div>
-</div>
 </div>
 
 <button></button>
