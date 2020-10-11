@@ -21,10 +21,10 @@ export class ColorThemeToggleComponent implements OnInit {
 
   ngOnInit(): void {
     this.renderer.addClass(this.document.body, this.theme);
-    
+
     // Callback Function in subscribe() runs every time value of observable changes.
-    this.colorThemeService.getTheme().subscribe((data) => {
-      this.document.body.classList.replace(this.theme, data);   // toggle 'light-theme' 'dark-theme' class on <body> tag. It has to be done this way because you can't use [ngClass] in index.html.
+    this.colorThemeService.ColorTheme$.subscribe((data) => {
+      this.document.body.classList.replace(this.theme, data); // toggle 'light-theme' 'dark-theme' class on <body> tag. It has to be done this way because you can't use [ngClass] in index.html.
       this.theme = data;
     });
   }

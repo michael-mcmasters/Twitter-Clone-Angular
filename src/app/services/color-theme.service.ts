@@ -6,23 +6,23 @@ import { Theme } from '../models/theme';
   providedIn: 'root',
 })
 export class ColorThemeService {
-  
-  // Value defaults to darkTheme
-  private observable: BehaviorSubject<Theme> = new BehaviorSubject<Theme>(
+  // BehaviourService is a kind of Observable. This value defaults to dark theme.
+  colorTheme$: BehaviorSubject<Theme> = new BehaviorSubject<Theme>(
     Theme.darkTheme
   );
 
-  getTheme(): Observable<Theme> {
-    return this.observable;
+  // This is just a public getter property
+  get ColorTheme$(): BehaviorSubject<Theme> {
+    return this.colorTheme$;
   }
 
   // Use observable.next() to change the value to the new value.
-  changeTheme(): Observable<Theme> {
-    if (this.observable.value === Theme.lightTheme) {
-      this.observable.next(Theme.darkTheme);
+  changeTheme(): BehaviorSubject<Theme> {
+    if (this.colorTheme$.value === Theme.lightTheme) {
+      this.colorTheme$.next(Theme.darkTheme);
     } else {
-      this.observable.next(Theme.lightTheme);
+      this.colorTheme$.next(Theme.lightTheme);
     }
-    return this.observable;
+    return this.colorTheme$;
   }
 }
