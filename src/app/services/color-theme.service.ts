@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 import { Theme } from '../models/theme';
 
 @Injectable({
@@ -7,7 +7,7 @@ import { Theme } from '../models/theme';
 })
 export class ColorThemeService {
   // BehaviourService is a kind of Observable. This value defaults to dark theme.
-  colorTheme$: BehaviorSubject<Theme> = new BehaviorSubject<Theme>(
+  private colorTheme$: BehaviorSubject<Theme> = new BehaviorSubject<Theme>(
     Theme.darkTheme
   );
 
