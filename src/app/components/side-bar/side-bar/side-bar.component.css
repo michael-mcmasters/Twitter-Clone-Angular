@@ -8,9 +8,6 @@
   --sidebar-text-background-color: rgba(29, 161, 242, 0.1);
 }
 
-
-
-
 .twitter-icon {
   font-size: 30px;
   color: var(--twitter-icon-color);
@@ -108,10 +105,9 @@ button:hover {
 }
 
 /* If window height < this, remove "bookmarks" and "lists" from sidebar */
-/* (Classes are PascalCase because .html adds them with sideBarItem.name) */
 @media (max-height: 630px) {
-  .Bookmarks,
-  .Lists {
+  .bookmarks,
+  .lists {
     display: none;
   }
 }

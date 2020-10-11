@@ -4,8 +4,8 @@
   [ngClass]="colorTheme"
 ></fa-icon>
 
-<div [ngClass]="colorTheme" *ngFor="let s of sideBarItems;">
-  <div [ngClass]="['wrapper', s.name]">
+<div *ngFor="let s of sideBarItems; let i = index">
+  <div [ngClass]="['wrapper', colorTheme, s.CSSClass]">
     <div class="container">
       <mat-icon fontSet="material-icons-outlined">
         <!-- TODO: Use bold icon when tabs are open. To do so, just remove the "fontset" class -->
