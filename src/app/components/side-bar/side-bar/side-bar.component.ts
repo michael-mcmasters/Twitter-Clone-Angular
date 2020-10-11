@@ -20,42 +20,34 @@ export class SideBarComponent implements OnInit {
     {
       name: 'Home',
       iconName: 'home',
-      CSSClass: '',
     },
     {
       name: 'Explore',
       iconName: 'search',
-      CSSClass: '',
     },
     {
       name: 'Notifications',
       iconName: 'notifications',
-      CSSClass: '',
     },
     {
       name: 'Messages',
       iconName: 'mail',
-      CSSClass: '',
     },
     {
       name: 'Bookmarks',
       iconName: 'note',
-      CSSClass: 'bookmarks',
     },
     {
       name: 'Lists',
       iconName: 'subject',
-      CSSClass: 'lists',
     },
     {
       name: 'Profile',
       iconName: 'perm_identity',
-      CSSClass: '',
     },
     {
       name: 'More',
       iconName: 'more_horiz',
-      CSSClass: '',
     },
   ];
 
