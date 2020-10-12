@@ -1,9 +1,11 @@
 .light-theme {
   --background-color: #f5f8fa;
+  --background-color-hover: rgb(237, 240, 242);
 }
 
 .dark-theme {
   --background-color: #192734;
+  --background-color-hover: rgb(32, 46, 58);
 }
 
 .wrapper {
@@ -40,10 +42,13 @@
   color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
+  
+  transition: background 0.2s;
 }
 
-.container :hover {
+.container:hover {
   cursor: pointer;
+  background-color: var(--background-color-hover);
 }
 
 .title > * {
@@ -60,5 +65,5 @@
 img {
   width: 69px;
   height: 69px;
-  border-radius: 30%;
+  border-radius: 25%;
 }
