@@ -20,6 +20,9 @@
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
+  
   color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
@@ -37,8 +40,6 @@
 }
 
 .article {
-  display: flex;
-  justify-content: space-between;
   font-size: 15px;
   font-weight: bold;
 }
