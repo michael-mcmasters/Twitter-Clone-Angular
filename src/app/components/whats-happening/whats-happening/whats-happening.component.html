@@ -1,2 +1,6 @@
-<!-- <div class="dark-theme"></div> -->
-<div [ngClass]="colorTheme"></div>
+<div [ngClass]="['wrapper', colorTheme]">
+  <div class="container">
+    <span>Category * Live</span>
+    <div>Article</div>
+  </div>
+</div>
