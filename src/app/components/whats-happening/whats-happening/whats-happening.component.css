@@ -11,10 +11,15 @@
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  /* width: 348px; */
+
+  width: 348px;
   height: 350px;
 
   background-color: var(--background-color);
   border-radius: 5%;
+}
+
+.container {
+  padding: 10px;
+  border-bottom: 1px solid gray;
 }
