@@ -62,6 +62,12 @@
   font-weight: bold;
 }
 
+.footer {
+  margin-top: 5px;
+  color: var(--secondary-text-color);
+  font-size: 13px;
+}
+
 img {
   width: 69px;
   height: 69px;
