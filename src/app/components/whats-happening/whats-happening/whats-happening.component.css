@@ -30,7 +30,7 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.whats-happening {
+.whats-happening-container > .whats-happening {
   font-size: 19px;
   font-weight: 800;
 }
@@ -42,7 +42,7 @@
   color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
-  
+
   transition: background 0.2s;
 }
 
@@ -66,4 +66,9 @@ img {
   width: 69px;
   height: 69px;
   border-radius: 25%;
+}
+
+.down-arrow-icon {
+  font-size: 20px;
+  color: var(--secondary-text-color);
 }

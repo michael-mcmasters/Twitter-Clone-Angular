@@ -19,4 +19,19 @@
     </div>
     <img src="{{ image }}" />
   </div>
+
+  <div class="container">
+    <div class="left-container">
+      <span class="title">
+        <span>Trending in United States</span>
+      </span>
+      <div class="article">
+        <div>#11milliondreams</div>
+      </div>
+    </div>
+    <!-- To set size without arrow moving away from center, it must be wrapped in a div and use [inline]=true. Source: https://stackoverflow.com/questions/43887701/how-to-change-mat-icon-size-in-material -->
+    <div class="down-arrow-icon">
+      <mat-icon [inline]="true">keyboard_arrow_down</mat-icon>
+    </div>
+  </div>
 </div>
