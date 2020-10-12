@@ -20,17 +20,25 @@
 }
 
 .container {
+  color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
 }
 
 .whats-happening {
-  color: var(--primary-text-color);
   font-size: 19px;
   font-weight: 800;
+}
+
+.title > * {
+  color: var(--secondary-text-color);
+  padding-right: 5px;
+  font-size: 13px;
 }
 
 .article {
   display: flex;
   justify-content: space-between;
+  font-size: 15px;
+  font-weight: bold;
 }
