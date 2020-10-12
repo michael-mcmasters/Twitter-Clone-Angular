@@ -20,6 +20,17 @@
 }
 
 .container {
-  padding: 10px;
+  padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
+}
+
+.whats-happening {
+  color: var(--primary-text-color);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
 }
