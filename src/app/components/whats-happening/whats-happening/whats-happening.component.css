@@ -19,10 +19,10 @@
   border-radius: 5%;
 }
 
-.container {
+.whats-happening-container {
   display: flex;
   justify-content: space-between;
-  
+
   color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
@@ -31,6 +31,19 @@
 .whats-happening {
   font-size: 19px;
   font-weight: 800;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  color: var(--primary-text-color);
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container :hover {
+  cursor: pointer;
 }
 
 .title > * {
@@ -42,4 +55,10 @@
 .article {
   font-size: 15px;
   font-weight: bold;
+}
+
+img {
+  width: 69px;
+  height: 69px;
+  border-radius: 30%;
 }
