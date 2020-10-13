@@ -82,13 +82,17 @@ button {
   height: 57px;
   margin-top: 10px;
 
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+
   cursor: pointer;
   transition: 0.2s;
 }
 
 button:focus,
 button:hover {
-  background-color: blue;
+  background-color: rgb(26, 145, 218);
 }
 
 /* If window width is <= this, only display icons (hide text) ... Make button smaller */
