@@ -45,8 +45,6 @@
   background-color: var(--background-color-hover);
 }
 
-
-
 .container {
   color: var(--primary-text-color);
   padding: 10px 15px;
@@ -62,7 +60,14 @@
 
 .flex {
   display: flex;
+  justify-content: unset;
+}
+
+.inner-content {
+  width: fill;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 img {
@@ -75,4 +80,9 @@ img {
 
 img:hover {
   opacity: 0.9;
+}
+
+.right {
+  display: relative;
+  margin-left: 400px;
 }
