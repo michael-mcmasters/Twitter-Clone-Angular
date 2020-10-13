@@ -1,23 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* (hover) The color when hovering over tweets. */
-/* (hover2) The color when hovering over images/videos inside of tweet. The tweet changes colors and then the image/video turns even brighter. */
-/* hover1 seems to be the same color as the What's Happening tab */
 .light-theme {
+  --primary-text-color: #222527;
+  --secondary-text-color: rgb(101, 119, 134);
   --background-color: white;
   --background-color-hover: #f5f8fa;
-  --background-color-hover2: red; /* color not set yet */
-  --primary-text-color: #222527;
-  --secondary-text-color: #232f39;
-  --border-color: #38444d;
+  --border-color: rgb(230, 236, 240);
 }
 
 .dark-theme {
-  --background-color: #15202b;
-  --background-color-hover: #192734;
-  --background-color-hover2: red; /* color not set yet */
   --primary-text-color: #ffffff;
   --secondary-text-color: #8796a0;
+  --background-color: #15202b;
+  --background-color-hover: #192734;
   --border-color: #38444d;
 }
 
