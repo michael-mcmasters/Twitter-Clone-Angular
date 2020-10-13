@@ -1,0 +1,78 @@
+.light-theme {
+  --background-color: rgb(245, 248, 250);
+  --background-color-hover: rgb(237, 240, 242);
+}
+
+.dark-theme {
+  --background-color: #192734;
+  --background-color-hover: rgb(32, 46, 58);
+}
+
+.wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 348px;
+
+  background-color: var(--background-color);
+  border-radius: 15px;
+}
+
+.who-to-follow-title {
+  color: var(--primary-text-color);
+  padding: 13px;
+  border-bottom: 1px solid var(--border-color);
+
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.show-more-footer {
+  padding: 15px;
+  font-size: 15px;
+  color: var(--twitter-blue);
+
+  /* Background that will appear on :hover. */
+  background-color: none;
+  border-radius: 0 0 15px 15px; /*  Match border radius of bottom of wrapper, or else it will overflow */
+  transition: background 0.2s;
+}
+
+.show-more-footer:hover {
+  cursor: pointer;
+  background-color: var(--background-color-hover);
+}
+
+
+
+.container {
+  color: var(--primary-text-color);
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--border-color);
+
+  transition: background 0.2s;
+}
+
+.container:hover {
+  cursor: pointer;
+  background-color: var(--background-color-hover);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+img:hover {
+  opacity: 0.9;
+}
