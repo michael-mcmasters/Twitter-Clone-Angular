@@ -35,6 +35,14 @@
   color: #1da1f2;
 }
 
+.show-more-footer:hover {
+  cursor: pointer;
+  background-color: var(--background-color-hover);
+  
+  /* Match border radius of bottom of wrapper, or else it will overflow */
+  border-radius: 0 0 15px 15px;
+}
+
 /* A container for each child component. */
 /* :host ::ng-deep allows child components to use parent component's CSS classes */
 :host ::ng-deep .container {
