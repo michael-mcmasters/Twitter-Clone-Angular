@@ -15,9 +15,10 @@ import { TweetComposerComponent } from './components/tweet-composer/tweet-compos
 import { PromotionComponent } from './components/whats-happening/promotion/promotion.component';
 import { TrendingComponent } from './components/whats-happening/trending/trending.component';
 import { ArticleComponent } from './components/whats-happening/article/article.component';
+import { WhoToFollowComponent } from './components/who-to-follow/who-to-follow.component';
 
 @NgModule({
-  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, WhatsHappeningComponent, TweetComposerComponent, PromotionComponent, TrendingComponent, ArticleComponent],
+  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, WhatsHappeningComponent, TweetComposerComponent, PromotionComponent, TrendingComponent, ArticleComponent, WhoToFollowComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

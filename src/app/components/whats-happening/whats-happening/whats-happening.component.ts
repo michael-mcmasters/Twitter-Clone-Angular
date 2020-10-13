@@ -10,7 +10,6 @@ import { ColorThemeService } from 'src/app/services/color-theme.service';
 export class WhatsHappeningComponent implements OnInit {
   public colorTheme: Theme;
 
-  // "private colorThemeService: ColorThemeService" is shorthand for dependency injection. See this video @6.32: https://www.youtube.com/watch?v=xaYuxILKBlo&t=41s&ab_channel=AndreMadarang
   constructor(private colorThemeService: ColorThemeService) {}
 
   ngOnInit(): void {
