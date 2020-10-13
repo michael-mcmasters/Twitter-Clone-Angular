@@ -12,7 +12,7 @@ export class WhatsHappeningComponent implements OnInit {
 
   private category: string;
   private articleTitle: string;
-  private image: string = './assets/images/dayman-avatar.jpg';
+  public image: string = './assets/images/dayman-avatar.jpg';
 
   // "private colorThemeService: ColorThemeService" is shorthand for dependency injection. See this video @6.32: https://www.youtube.com/watch?v=xaYuxILKBlo&t=41s&ab_channel=AndreMadarang
   constructor(private colorThemeService: ColorThemeService) {}
