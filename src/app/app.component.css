@@ -61,8 +61,6 @@
 
   overflow: scroll;
   scrollbar-width: none; /* Hide scroll bar in Firefox */
-  
-  border: 1px solid blue;
 }
 
 /* Hide scroll bar in Chrome and Edge*/
