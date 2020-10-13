@@ -35,7 +35,8 @@
   font-weight: 800;
 }
 
-.container {
+/* :host ::ng-deep allows child components to use this component's CSS classes */
+:host ::ng-deep .container {
   display: flex;
   justify-content: space-between;
 
@@ -46,35 +47,35 @@
   transition: background 0.2s;
 }
 
-.container:hover {
+:host ::ng-deep .container:hover {
   cursor: pointer;
   background-color: var(--background-color-hover);
 }
 
-.title > * {
+:host ::ng-deep .title > * {
   color: var(--secondary-text-color);
   padding-right: 5px;
   font-size: 13px;
 }
 
-.article {
+:host ::ng-deep .article {
   font-size: 15px;
   font-weight: bold;
 }
 
-.footer {
+:host ::ng-deep .footer {
   margin-top: 5px;
   color: var(--secondary-text-color);
   font-size: 13px;
 }
 
-img {
+:host ::ng-deep img {
   width: 69px;
   height: 69px;
   border-radius: 25%;
 }
 
-.down-arrow-icon {
+:host ::ng-deep .down-arrow-icon {
   font-size: 20px;
   color: var(--secondary-text-color);
 }
