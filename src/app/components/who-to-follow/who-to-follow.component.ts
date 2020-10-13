@@ -11,6 +11,7 @@ export class WhoToFollowComponent implements OnInit {
   public colorTheme: Theme;
 
   public avatarImage: string = './assets/images/dayman-avatar.jpg';
+  public avatarImage2: string = './assets/images/steve-martin-avatar.jpg';
 
   constructor(private colorThemeService: ColorThemeService) {}
 
