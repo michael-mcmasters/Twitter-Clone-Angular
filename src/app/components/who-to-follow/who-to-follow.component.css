@@ -82,7 +82,8 @@ img:hover {
   opacity: 0.9;
 }
 
-.right {
-  display: relative;
-  margin-left: 400px;
+footer {
+  margin-left: 56px;
+  color: var(--secondary-text-color);
+  font-size: 13px;
 }
