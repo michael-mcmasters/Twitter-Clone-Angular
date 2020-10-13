@@ -62,7 +62,7 @@
 
 .flex {
   display: flex;
-  justify-content: unset;
+  align-items: center;
 }
 
 img {
@@ -70,6 +70,7 @@ img {
   height: 3rem;
   margin-right: 10px;
   border-radius: 50%;
+
   transition: 0.2s;
 }
 
@@ -77,25 +78,25 @@ img:hover {
   opacity: 0.9;
 }
 
-.inner-content {
-  width: fill;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  font-size: 15px;
-}
-
 .name {
   color: var(--primary-text-color);
   font-weight: bold;
+  font-size: 15px;
 }
 
 .username {
+  /* For flexbox. This puts element in a new line in the current row, instead of creating a new row. */
+  display: block;
+
   color: var(--secondary-text-color);
+  font-size: 15px;
 }
 
-button {
+.button-container {
+  margin-left: auto;
+}
+
+.button-container > button {
   padding: 4px 15px;
   border: 1px solid var(--twitter-blue);
   border-radius: 100px;
@@ -108,12 +109,13 @@ button {
   transition: background 0.2s;
 }
 
-button:hover {
+.button-container > button:hover {
   cursor: pointer;
   background-color: var(--button-color-hover);
 }
 
 .promoted {
+  padding-top: 5px;
   margin-left: 56px;
   color: var(--secondary-text-color);
   font-size: 13px;
