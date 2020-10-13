@@ -82,17 +82,28 @@ img:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  font-size: 15px;
+}
+
+.name {
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+.username {
+  color: var(--secondary-text-color);
 }
 
 button {
   padding: 4px 15px;
   border: 1px solid var(--twitter-blue);
   border-radius: 100px;
-  
+
   font-size: 15px;
   font-weight: bold;
   color: var(--twitter-blue);
-  
+
   background-color: var(--background-color);
   transition: background 0.2s;
 }
@@ -102,7 +113,7 @@ button:hover {
   background-color: var(--button-color-hover);
 }
 
-footer {
+.promoted {
   margin-left: 56px;
   color: var(--secondary-text-color);
   font-size: 13px;
