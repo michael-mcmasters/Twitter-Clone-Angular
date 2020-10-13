@@ -21,7 +21,7 @@
   border-radius: 5%;
 }
 
-.whats-happening-container {
+.whats-happening-title {
   display: flex;
   justify-content: space-between;
 
@@ -30,12 +30,13 @@
   border-bottom: 1px solid var(--border-color);
 }
 
-.whats-happening-container > .whats-happening {
+.whats-happening-title :first-child {
   font-size: 19px;
   font-weight: 800;
 }
 
-/* :host ::ng-deep allows child components to use this component's CSS classes */
+/* A container for each child component. */
+/* :host ::ng-deep allows child components to use parent component's CSS classes */
 :host ::ng-deep .container {
   color: var(--primary-text-color);
   padding: 10px 15px;
@@ -44,14 +45,14 @@
   transition: background 0.2s;
 }
 
-:host ::ng-deep .flex {
-  display: flex;
-  justify-content: space-between;
-}
-
 :host ::ng-deep .container:hover {
   cursor: pointer;
   background-color: var(--background-color-hover);
+}
+
+:host ::ng-deep .flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 :host ::ng-deep .head > * {
@@ -69,15 +70,4 @@
   margin-top: 5px;
   color: var(--secondary-text-color);
   font-size: 13px;
-}
-
-:host ::ng-deep img {
-  width: 69px;
-  height: 69px;
-  border-radius: 25%;
-}
-
-:host ::ng-deep .down-arrow-icon {
-  font-size: 20px;
-  color: var(--secondary-text-color);
 }
