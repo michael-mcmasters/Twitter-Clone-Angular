@@ -17,21 +17,22 @@
   width: 348px;
 
   background-color: var(--background-color);
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .whats-happening-title {
-  display: flex;
-  justify-content: space-between;
-
   color: var(--primary-text-color);
-  padding: 10px 15px;
+  padding: 13px;
   border-bottom: 1px solid var(--border-color);
-}
 
-.whats-happening-title :first-child {
   font-size: 19px;
   font-weight: 800;
+}
+
+.show-more-footer {
+  padding: 15px;
+  font-size: 15px;
+  color: #1da1f2;
 }
 
 /* A container for each child component. */
