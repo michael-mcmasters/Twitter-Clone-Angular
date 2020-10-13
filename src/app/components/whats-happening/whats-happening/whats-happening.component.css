@@ -33,15 +33,16 @@
   padding: 15px;
   font-size: 15px;
   color: var(--twitter-blue);
+  
+  /* Background that will appear on :hover. */
+  background-color: none;
+  border-radius: 0 0 15px 15px; /*  Match border radius of bottom of wrapper, or else it will overflow */
   transition: background 0.2s;
 }
 
 .show-more-footer:hover {
   cursor: pointer;
   background-color: var(--background-color-hover);
-  
-  /* Match border radius of bottom of wrapper, or else it will overflow */
-  border-radius: 0 0 15px 15px;
 }
 
 /* A container for each child component. */
