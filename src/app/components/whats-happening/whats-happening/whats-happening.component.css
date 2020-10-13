@@ -32,7 +32,8 @@
 .show-more-footer {
   padding: 15px;
   font-size: 15px;
-  color: #1da1f2;
+  /* color: #1da1f2; */
+  color: var(--twitter-blue);
 }
 
 .show-more-footer:hover {

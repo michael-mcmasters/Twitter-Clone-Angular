@@ -25,6 +25,7 @@
 body {
   /* this goes here instead of in *, div's background color can't be overrided (specifically noticeable when using :hover on a tweet) */
   background-color: var(--background-color);
+  --twitter-blue: #1da1f2;
 }
 
 html,
