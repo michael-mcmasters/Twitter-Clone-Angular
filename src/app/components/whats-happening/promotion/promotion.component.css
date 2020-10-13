@@ -1,0 +1,9 @@
+.container :first-child {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.container :nth-child(2) {
+  color: var(--secondary-text-color);
+  font-size: 15px;
+}

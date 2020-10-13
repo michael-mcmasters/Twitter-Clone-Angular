@@ -1,5 +1,5 @@
 .light-theme {
-  --background-color: #f5f8fa;
+  --background-color: #8ca0ad;
   --background-color-hover: rgb(237, 240, 242);
 }
 
@@ -37,9 +37,6 @@
 
 /* :host ::ng-deep allows child components to use this component's CSS classes */
 :host ::ng-deep .container {
-  display: flex;
-  justify-content: space-between;
-
   color: var(--primary-text-color);
   padding: 10px 15px;
   border-bottom: 1px solid var(--border-color);
@@ -47,12 +44,17 @@
   transition: background 0.2s;
 }
 
+:host ::ng-deep .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 :host ::ng-deep .container:hover {
   cursor: pointer;
   background-color: var(--background-color-hover);
 }
 
-:host ::ng-deep .title > * {
+:host ::ng-deep .head > * {
   color: var(--secondary-text-color);
   padding-right: 5px;
   font-size: 13px;
