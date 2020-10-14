@@ -31,11 +31,13 @@ article > input {
   
   background: none;
   border: none;
+  
   font-size: 19px; /* Font size goes here. Size of text box changes if we set the font size in ::placeholder */
 }
 
 article > input::placeholder {
   color: var(--secondary-text-color);
+  opacity: 1; /* Have to do this for color to change on Firefox */
 }
 
 article > .everyone-can-reply {
