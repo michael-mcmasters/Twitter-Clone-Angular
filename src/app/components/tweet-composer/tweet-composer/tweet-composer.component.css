@@ -40,6 +40,10 @@ article > input::placeholder {
   opacity: 1; /* Have to do this for color to change on Firefox */
 }
 
+textarea:focus, input:focus{
+  outline: none;
+}
+
 article > .everyone-can-reply {
   font-size: 13px;
   color: var(--twitter-blue);
@@ -85,4 +89,5 @@ footer > button:focus,
 footer > button:hover {
   cursor: pointer;
   background-color: rgb(26, 145, 218);
+  outline: none;
 }
