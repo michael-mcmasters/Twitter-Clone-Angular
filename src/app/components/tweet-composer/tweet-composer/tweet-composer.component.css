@@ -22,17 +22,32 @@ img:hover {
   opacity: 0.9;
 }
 
-.inner-container {
+article {
   width: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
+}
+
+article > .everyone-can-reply {
+  font-size: 13px;
+  color: var(--twitter-blue);
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 footer {
+  border-top: 1px solid var(--border-color);
+  height: 49px;
+  
   display: flex;
   align-items: center;
 }
 
+footer > * {
+  margin-top: 10px;
+}
+
 footer > mat-icon {
+  margin-right: 15px;
   color: var(--twitter-blue);
   font-weight: 100;
 }
@@ -45,7 +60,7 @@ footer > button {
   font-size: 15px;
   font-weight: bold;
   color: white;
-  
+
   border: none;
   border-radius: 100px;
   background-color: var(--twitter-blue);
