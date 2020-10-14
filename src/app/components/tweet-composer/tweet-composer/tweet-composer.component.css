@@ -54,20 +54,28 @@ article {
   color: var(--secondary-text-color);
 }
 
-/* When user focuses on input, make everyone-can-reply visible */
+/* When user focuses on input, make 'everyone-can-reply' visible */
 .input:focus + .everyone-can-reply {
-  display: inherit;
+  display: flex;
 }
 
 .everyone-can-reply {
-  display: none;
-
+  /* display: none; */
+  display: flex;
+  align-items: center;
+  
   padding-bottom: 10px;
   border-bottom: 1px solid var(--border-color);
 
   font-size: 13px;
   font-weight: bold;
   color: var(--twitter-blue);
+}
+
+.earth {
+  float: left;
+  font-size: 23px;
+  margin-right: 4px;
 }
 
 footer {
