@@ -27,8 +27,9 @@ article {
   max-width: 504px; /* Prevent div from expanding out of tweet box if user types an entire line without spaces */
 }
 
-article > .input {
-  margin: 10px 0;
+.input {
+  margin-top: 13px;
+  margin-bottom: 10px;
 
   background: none;
   border: none;
@@ -41,8 +42,8 @@ article > .input {
   color: var(--primary-text-color);
 }
 
-article > textarea:focus,
-article > .input:focus {
+.input:focus,
+.input:focus {
   outline: none;
 }
 
@@ -53,23 +54,30 @@ article > .input:focus {
   color: var(--secondary-text-color);
 }
 
-article > .everyone-can-reply {
+/* When user focuses on input, make everyone-can-reply visible */
+.input:focus + .everyone-can-reply {
+  display: inherit;
+}
+
+.everyone-can-reply {
+  display: none;
+
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+
   font-size: 13px;
-  color: var(--twitter-blue);
   font-weight: bold;
-  margin-bottom: 10px;
+  color: var(--twitter-blue);
 }
 
 footer {
-  border-top: 1px solid var(--border-color);
   height: 49px;
 
   display: flex;
   align-items: center;
-}
-
-footer > * {
   margin-top: 10px;
+  margin-bottom: -5px;
 }
 
 footer > mat-icon {
