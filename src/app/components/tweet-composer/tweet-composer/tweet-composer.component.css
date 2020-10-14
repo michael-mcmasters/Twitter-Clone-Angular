@@ -26,28 +26,30 @@ article {
   width: 100%;
 }
 
-article > input {
+article > .input {
   margin: 10px 0;
-  
+
   background: none;
   border: none;
-  
+
   /* font size of placeholder text and input text. If we put this in input::placeholder the input size will cut the text off */
   font-size: 19px;
-  
+
   /* Change color of cursor and the text the user types */
   caret-color: var(--primary-text-color);
   color: var(--primary-text-color);
 }
 
-article > input::placeholder {
-  color: var(--secondary-text-color);
-  opacity: 1; /* Have to do this for color to change on Firefox */
+article > textarea:focus,
+article > .input:focus {
+  outline: none;
 }
 
-article > textarea:focus,
-article > input:focus{
-  outline: none;
+/* Make placeholder text appear/disappear depending on if input field is empty */
+/* Code is from the asker of this post. Check their fiddle: https://stackoverflow.com/questions/20726174/placeholder-for-contenteditable-div */
+.input[placeholder]:empty:before {
+  content: attr(placeholder);
+  color: var(--secondary-text-color);
 }
 
 article > .everyone-can-reply {
