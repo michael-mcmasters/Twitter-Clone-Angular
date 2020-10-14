@@ -24,6 +24,7 @@ img:hover {
 
 article {
   width: 100%;
+  max-width: 504px; /* Prevent div from expanding out of tweet box if user types an entire line without spaces */
 }
 
 article > .input {
