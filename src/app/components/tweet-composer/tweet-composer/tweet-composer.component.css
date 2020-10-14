@@ -113,3 +113,11 @@ footer > button:hover {
   background-color: rgb(26, 145, 218);
   outline: none;
 }
+
+/* Hide these icons if width is less than this */
+@media (max-width: 705px) {
+  footer :nth-child(3),
+  footer :nth-child(5) {
+    display: none;
+  }
+}
