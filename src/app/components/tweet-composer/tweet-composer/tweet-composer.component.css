@@ -1,0 +1,15 @@
+img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+img:hover {
+  opacity: 0.9;
+}
+
+.inline {
+  display: inline-block;
+}
