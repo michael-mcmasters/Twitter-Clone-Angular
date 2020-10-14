@@ -32,7 +32,12 @@ article > input {
   background: none;
   border: none;
   
-  font-size: 19px; /* Font size goes here. Size of text box changes if we set the font size in ::placeholder */
+  /* font size of placeholder text and input text. If we put this in input::placeholder the input size will cut the text off */
+  font-size: 19px;
+  
+  /* Change color of cursor and the text the user types */
+  caret-color: var(--primary-text-color);
+  color: var(--primary-text-color);
 }
 
 article > input::placeholder {
@@ -40,7 +45,8 @@ article > input::placeholder {
   opacity: 1; /* Have to do this for color to change on Firefox */
 }
 
-textarea:focus, input:focus{
+article > textarea:focus,
+article > input:focus{
   outline: none;
 }
 
