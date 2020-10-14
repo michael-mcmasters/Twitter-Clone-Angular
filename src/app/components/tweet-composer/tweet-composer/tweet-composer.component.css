@@ -5,7 +5,7 @@
   border-right: 1px solid;
   border-bottom: 8px solid;
   border-color: var(--border-color);
-  
+
   padding: 10px 15px 10px;
 }
 
@@ -14,10 +14,29 @@ img {
   height: 3rem;
   margin-right: 10px;
   border-radius: 50%;
-  
+
   transition: 0.2s;
 }
 
 img:hover {
   opacity: 0.9;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+}
+
+button {
+  float: right;
+  background-color: var(--twitter-blue);
+  border: none;
+  border-radius: 100px;
+  width: 74px;
+  height: 39px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
