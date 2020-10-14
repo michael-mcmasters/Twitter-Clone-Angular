@@ -112,8 +112,8 @@ button:hover {
 
 /* If window height < this, remove "bookmarks" and "lists" from sidebar */
 @media (max-height: 630px) {
-  .bookmarks,
-  .lists {
+  :nth-child(6),
+  :nth-child(7) {
     display: none;
   }
 }
