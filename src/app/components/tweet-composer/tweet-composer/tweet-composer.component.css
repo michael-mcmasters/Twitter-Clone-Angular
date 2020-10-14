@@ -22,21 +22,39 @@ img:hover {
   opacity: 0.9;
 }
 
+.inner-container {
+  width: 100%;
+  border: 1px solid blue;
+}
+
 footer {
   display: flex;
   align-items: center;
-  border: 1px solid red;
 }
 
-button {
-  float: right;
-  background-color: var(--twitter-blue);
-  border: none;
-  border-radius: 100px;
+footer > mat-icon {
+  color: var(--twitter-blue);
+  font-weight: 100;
+}
+
+footer > button {
+  margin-left: auto;
   width: 74px;
   height: 39px;
+
   font-size: 15px;
-  color: white;
   font-weight: bold;
+  color: white;
+  
+  border: none;
+  border-radius: 100px;
+  background-color: var(--twitter-blue);
+
+  transition: background 0.8s;
+}
+
+footer > button:focus,
+footer > button:hover {
   cursor: pointer;
+  background-color: rgb(26, 145, 218);
 }
