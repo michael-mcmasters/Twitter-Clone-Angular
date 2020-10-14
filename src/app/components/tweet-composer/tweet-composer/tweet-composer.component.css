@@ -24,7 +24,18 @@ img:hover {
 
 article {
   width: 100%;
-  /* border: 1px solid blue; */
+}
+
+article > input {
+  margin: 10px 0;
+  
+  background: none;
+  border: none;
+  font-size: 19px; /* Font size goes here. Size of text box changes if we set the font size in ::placeholder */
+}
+
+article > input::placeholder {
+  color: var(--secondary-text-color);
 }
 
 article > .everyone-can-reply {
@@ -37,7 +48,7 @@ article > .everyone-can-reply {
 footer {
   border-top: 1px solid var(--border-color);
   height: 49px;
-  
+
   display: flex;
   align-items: center;
 }
