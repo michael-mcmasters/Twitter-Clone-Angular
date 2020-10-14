@@ -6,7 +6,7 @@
   border-bottom: 8px solid;
   border-color: var(--border-color);
 
-  padding: 10px 15px 10px;
+  padding: 10px 15px 0px;
 }
 
 img {
@@ -29,7 +29,7 @@ article {
 
 .input {
   margin-top: 13px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   background: none;
   border: none;
@@ -60,11 +60,10 @@ article {
 }
 
 .everyone-can-reply {
-  /* display: none; */
-  display: flex;
+  display: none;
   align-items: center;
-  
-  padding-bottom: 10px;
+
+  padding-bottom: 12px;
   border-bottom: 1px solid var(--border-color);
 
   font-size: 13px;
@@ -72,10 +71,10 @@ article {
   color: var(--twitter-blue);
 }
 
-.earth {
+.earth-icon {
   float: left;
   font-size: 23px;
-  margin-right: 4px;
+  padding-right: 4px;
 }
 
 footer {
@@ -83,8 +82,7 @@ footer {
 
   display: flex;
   align-items: center;
-  margin-top: 10px;
-  margin-bottom: -5px;
+  margin: 5px 0;
 }
 
 footer > mat-icon {
