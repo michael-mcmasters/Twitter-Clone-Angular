@@ -24,22 +24,20 @@ img:hover {
 
 article {
   width: 100%;
-  max-width: 504px; /* Prevent div from expanding out of tweet box if user types an entire line without spaces */
+  max-width: 475px; /* Prevents words from spilling out of text box if user types a long word with no spaces */
 }
 
 .input {
   margin-top: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   background: none;
   border: none;
 
-  /* font size of placeholder text and input text. If we put this in input::placeholder the input size will cut the text off */
+  /* Edits placeholder text, user inputted text, and the cursor color */
   font-size: 19px;
-
-  /* Change color of cursor and the text the user types */
-  caret-color: var(--primary-text-color);
   color: var(--primary-text-color);
+  caret-color: var(--primary-text-color);
 }
 
 .input:focus {
@@ -51,33 +49,51 @@ article {
 }
 
 /* Make placeholder text appear/disappear depending on if input field is empty */
-/* Code is from the asker of this post. Check their fiddle: https://stackoverflow.com/questions/20726174/placeholder-for-contenteditable-div */
+/* Code is from the asker of this post. (Look at their Fiddle): https://stackoverflow.com/questions/20726174/placeholder-for-contenteditable-div */
 .input[placeholder]:empty:before {
   content: attr(placeholder);
   color: var(--secondary-text-color);
 }
 
-/* When user focuses on input, make 'everyone-can-reply' visible */
-.input:focus + .everyone-can-reply {
+/* When user focuses on input, makes 'everyone-can-reply' visible */
+.input:focus + .everyone-can-reply-wrapper {
   display: flex;
 }
 
-.everyone-can-reply {
+.everyone-can-reply-wrapper {
   display: none;
   align-items: center;
-
-  padding-bottom: 12px;
+  padding: 0 0 10px 0;
   border-bottom: 1px solid var(--border-color);
+}
+
+.everyone-can-reply-container {
+  display: inline-flex;
 
   font-size: 13px;
   font-weight: bold;
   color: var(--twitter-blue);
+
+  transition: background 0.2s;
+  border-radius: 9999px;
+  padding: 5px 10px 0px 5px; /* Weird numbers to make background appear centered */
 }
 
-.earth-icon {
-  float: left;
-  font-size: 23px;
-  padding-right: 4px;
+.everyone-can-reply-container:hover {
+  cursor: pointer;
+  background-color: var(--background-color-hover);
+}
+
+.earth-icon-container {
+  padding-right: 3px;
+}
+
+.earth-icon-container > mat-icon {
+  /* Move up slightly to align with text */
+  position: relative;
+  bottom: 1px;
+
+  font-size: 21px;
 }
 
 footer {
@@ -102,7 +118,7 @@ footer > .icon-container:hover {
   background-color: var(--background-color-hover);
 }
 
-footer > .icon-container * {
+footer > .icon-container mat-icon {
   color: var(--twitter-blue);
   font-weight: 100;
 }

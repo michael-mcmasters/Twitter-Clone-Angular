@@ -1,11 +1,18 @@
 <div class="flex-container">
+
   <img src="{{ avatarImage }}" />
+
   <article>
     <div class="input" placeholder="What's happening?" contenteditable="true"></div>
-    <div class="everyone-can-reply">
-      <mat-icon class="earth-icon">public</mat-icon>
-      <div>Everyone can reply</div>
+    <div class="everyone-can-reply-wrapper">
+      <div class="everyone-can-reply-container">
+        <div class="earth-icon-container">
+          <mat-icon>public</mat-icon>
+        </div>
+        <span>Everyone can reply</span>
+      </div>
     </div>
+
     <footer>
       <div class="icon-container">
         <mat-icon fontSet="material-icons-outlined">insert_photo</mat-icon>
@@ -26,5 +33,6 @@
       </div>
       <button>Tweet</button>
     </footer>
+
   </article>
 </div>
