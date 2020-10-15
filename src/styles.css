@@ -12,6 +12,11 @@
   --border-color: #38444d;
 }
 
+/* Variables that never change */
+.consistent-colors {
+  --twitter-blue: #1da1f2;
+}
+
 * {
   /* not sure how these fonts work. I typed "Ubunto" and it auto suggested this. Most of the fonts seemed close to what twitter.com is using from inspecting their page. */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -19,9 +24,9 @@
 }
 
 body {
-  /* this goes here instead of in *, div's background color can't be overrided (specifically noticeable when using :hover on a tweet) */
+  /* this goes here instead of in *
+    because div's background color can't be overrided (specifically noticeable when using :hover on a tweet) */
   background-color: var(--background-color);
-  --twitter-blue: #1da1f2;
 }
 
 html,
