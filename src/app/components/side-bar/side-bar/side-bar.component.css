@@ -1,11 +1,9 @@
 .light-theme {
   --twitter-icon-color: var(--twitter-blue);
-  --sidebar-text-background-color: rgba(29, 161, 242, 0.1);
 }
 
 .dark-theme {
   --twitter-icon-color: white;
-  --sidebar-text-background-color: rgba(29, 161, 242, 0.1);
 }
 
 .twitter-icon {
@@ -25,7 +23,7 @@
 
 .twitter-icon:focus,
 .twitter-icon:hover {
-  background-color: var(--sidebar-text-background-color);
+  background-color: var(--background-color-hover);
 }
 
 .wrapper {
@@ -46,7 +44,7 @@
 .wrapper:focus > .container,
 .wrapper:hover > .container {
   color: var(--twitter-blue);
-  background: var(--sidebar-text-background-color);
+  background: var(--background-color-hover);
 }
 
 .container {
@@ -81,7 +79,7 @@ button {
   width: 260px;
   height: 57px;
   margin-top: 10px;
-  
+
   box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 28px;
 
   font-size: 15px;

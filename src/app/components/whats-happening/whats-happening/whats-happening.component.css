@@ -33,7 +33,7 @@
   padding: 15px;
   font-size: 15px;
   color: var(--twitter-blue);
-  
+
   /* Background that will appear on :hover. */
   background-color: none;
   border-radius: 0 0 15px 15px; /*  Match border radius of bottom of wrapper, or else it will overflow */
