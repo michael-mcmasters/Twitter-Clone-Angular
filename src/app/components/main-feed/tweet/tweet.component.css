@@ -1,3 +1,11 @@
+.light-theme {
+  --background-color-hover: #f5f8fa;
+}
+
+.dark-theme {
+  --background-color-hover: #192734;
+}
+
 .tweet-container {
   display: flex;
   border-left: 1px solid;
