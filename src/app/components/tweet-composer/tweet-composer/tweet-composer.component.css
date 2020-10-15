@@ -81,13 +81,21 @@ footer {
   display: flex;
   align-items: center;
   height: 49px;
-  margin: 6px 0;
+  margin: 5px 0;
 }
 
 footer > .icon-container {
   display: flex;
   align-items: center;
-  margin-right: 15px;
+  padding: 8px;
+
+  transition: background 0.2s;
+  border-radius: 9999px;
+}
+
+footer > .icon-container:hover {
+  cursor: pointer;
+  background-color: var(--background-color-hover);
 }
 
 footer > .icon-container * {
