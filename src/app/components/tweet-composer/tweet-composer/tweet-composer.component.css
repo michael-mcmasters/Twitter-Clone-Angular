@@ -78,15 +78,19 @@ article {
 }
 
 footer {
-  height: 49px;
-
   display: flex;
   align-items: center;
-  margin: 5px 0;
+  height: 49px;
+  margin: 6px 0;
 }
 
-footer > mat-icon {
+footer > .icon-container {
+  display: flex;
+  align-items: center;
   margin-right: 15px;
+}
+
+footer > .icon-container * {
   color: var(--twitter-blue);
   font-weight: 100;
 }
