@@ -42,9 +42,12 @@ article {
   color: var(--primary-text-color);
 }
 
-.input:focus,
 .input:focus {
   outline: none;
+}
+
+.input:hover {
+  cursor: text;
 }
 
 /* Make placeholder text appear/disappear depending on if input field is empty */
