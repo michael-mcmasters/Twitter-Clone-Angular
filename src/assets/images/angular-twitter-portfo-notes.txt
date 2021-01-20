@@ -1,0 +1,39 @@
+Change color theme
+
+Hover affects
+
+Sticky side bar
+Scollable sticky side bar
+
+Responsive
+
+
+Hover SideBar,
+Change Theme, hover sidebar again,
+Change theme back.
+
+
+Change theme
+Hover over sidebar
+Hover over tweets
+Hover over what's happening and who to follow
+Scroll down and then up to show right side stick.
+click in tweet box, click tweet, end video
+
+Bill Gates @BillGates
+It’s great to see India’s leadership in scientific innovation and vaccine manufacturing capability as the world works to end the COVID-19 pandemic .
+
+Steve Jobs @SteveJobs
+You have to be burning with an idea, or a problem, or a wrong that you want to right. If you’re not passionate enough from the start, you’ll never stick it out.
+
+James Gosling @errcraft
+In the Java world, security is not viewed as an add-on a feature. It is a pervasive way of thinking. Those who forget to think in a secure mindset end up in trouble. But just because the facilities are there doesn't mean that security is assured automatically. A set of standard practices has evolved over the years. The Secure Coding Standard for Java is a compendium of these practices. These are not theoretical research papers or product marketing blurbs. This is all serious, mission-critical, battle-tested, enterprise-scale stuff.
+
+Uncle Bob Martin @unclebobmartin
+“If you're good at the debugger it means you spent a lot of time debugging. I don't want you to be good at the debugger.”
+
+Tim Cook @TimCook
+History rarely yields to one person, but think and never forget what happens when it does. That can be you. That should be you. That must be you
+
+@Jeff Bezos @JeffBezos
+If you can't tolerate critics, don't do anything new or interesting.
