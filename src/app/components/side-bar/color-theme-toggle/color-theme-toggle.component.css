@@ -1,5 +1,27 @@
 button {
   position: fixed;
-  top: 75vh;
-  margin: 20px;
+  top: 87vh;
+  height: 4em;
+  padding: 0.6em;
+  font-weight: 500;
+  color: white;
+  background-color: var(--twitter-blue);
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  background-color: rgb(26, 145, 218);
+}
+
+*:focus {
+  outline: none;
+}
+
+@media (max-height: 476px) {
+  button {
+    display: none;
+  }
 }
