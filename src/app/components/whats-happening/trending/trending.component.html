@@ -1,12 +1,13 @@
 <div class="container flex">
   <div>
     <span class="head">
-      <span>Trending in United States</span>
+      <!-- <span>Trending in United States</span> -->
+      <span>{{trending.category}}</span>
     </span>
     <div class="article">
-      <div>#11milliondreams</div>
+      <div>{{trending.content}}</div>
     </div>
-    <div class="footer">2,110 Tweets</div>
+    <div class="footer">{{trending.numOfTweets}} Tweets</div>
   </div>
   <!-- To set size without arrow moving away from center, it must be wrapped in a div and use [inline]=true. Source: https://stackoverflow.com/questions/43887701/how-to-change-mat-icon-size-in-material -->
   <div class="down-arrow-icon">

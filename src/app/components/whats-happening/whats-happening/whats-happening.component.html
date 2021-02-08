@@ -5,10 +5,10 @@
 
   <!-- Use an if condition to determine which one of these components should run -->
   <app-article [article]="articles[0]"></app-article>
-  <app-trending></app-trending>
-  <app-article></app-article>
+  <app-trending [trending]="trending[0]"></app-trending>
+  <app-article [article]="articles[1]"></app-article>
   <app-promotion></app-promotion>
-  <app-trending></app-trending>
+  <app-trending [trending]="trending[1]"></app-trending>
 
   <div class="show-more-footer">
     <div>Show more</div>
