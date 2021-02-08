@@ -46,7 +46,13 @@ export class WhatsHappeningComponent implements OnInit {
         },
       ];
 
-      this.promotions = [{}];
+      this.promotions = [
+        {
+          mainContent: '#StarTrekDiscover 🙎‍♂️',
+          secondaryContent: 'New Season Thursday',
+          thirdContent: '↗ Promoted by Star Trek on CBS All Access',
+        },
+      ];
     });
   }
 }
