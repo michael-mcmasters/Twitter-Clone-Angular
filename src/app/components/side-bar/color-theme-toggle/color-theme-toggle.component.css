@@ -25,3 +25,9 @@ button:hover {
     display: none;
   }
 }
+
+@media (max-width: 1005px) {
+  button {
+    display: none;
+  }
+}
