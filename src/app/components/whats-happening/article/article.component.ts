@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-article',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./article.component.css'],
 })
 export class ArticleComponent implements OnInit {
-  
   public image: string = './assets/images/dayman-avatar.jpg';
+  @Input() article: any;
 
   constructor() {}
 
