@@ -21,14 +21,15 @@ export class WhatsHappeningComponent implements OnInit {
 
       this.articles = [
         {
-          category: 'Category · LIVE',
+          category: 'Weather · LIVE',
           body:
             "This is an article: Wow an article. I'm writing more to see what happens when it gets too long. And just one more.",
           img: './assets/images/dayman-avatar.jpg',
         },
         {
           category: 'Cat2 * AlsoLIVE',
-          body: 'This is another article wow!',
+          body:
+            'Quick-hitting snow to precede potential blockbuster storm across the mid-Atlantic, Northeast',
           img: './assets/images/dayman-avatar.jpg',
         },
       ];

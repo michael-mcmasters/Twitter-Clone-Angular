@@ -74,6 +74,7 @@
 :host ::ng-deep .article {
   font-size: 15px;
   font-weight: bold;
+  padding-right: 1em;
 }
 
 :host ::ng-deep .footer {

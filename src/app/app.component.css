@@ -83,24 +83,6 @@
 
 @media (max-width: 1095px) {
   #right-side-container {
-    left: 0px;
-    width: 290px;
-    border: 1px solid red;
-  }
-}
-
-@media (max-width: 1005px) {
-  #right-side-container {
     display: none;
   }
-}
-
-/* Temporary. Changes color theme */
-button {
-}
-
-/* This adds a scroll bar while I line things up. Will delete before project is finished. */
-.temp-scroll-bar {
-  position: relative;
-  top: 100vh;
 }
