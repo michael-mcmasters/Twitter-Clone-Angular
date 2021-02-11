@@ -38,11 +38,11 @@ export class WhatsHappeningComponent implements OnInit {
         {
           category: 'Trending in United States',
           content: '#11milliondreams',
-          numOfTweets: '2,110',
+          numOfTweets: '6,897',
         },
         {
-          category: 'Trending in United States',
-          content: '#11milliondreams',
+          category: 'Trending in Philidelphia',
+          content: '#ThursdayThoughts',
           numOfTweets: '2,110',
         },
       ];
