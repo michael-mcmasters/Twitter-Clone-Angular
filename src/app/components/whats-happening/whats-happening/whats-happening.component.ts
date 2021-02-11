@@ -23,14 +23,14 @@ export class WhatsHappeningComponent implements OnInit {
         {
           category: 'Weather · LIVE',
           body:
-            "This is an article: Wow an article. I'm writing more to see what happens when it gets too long. And just one more.",
+            '‘I’m Not a Cat,’ Lawyer Tells Judge When He Can’t Change The Zoom Filter – Hilarious Video',
           img: './assets/images/dayman-avatar.jpg',
         },
         {
-          category: 'Cat2 * AlsoLIVE',
+          category: 'Weather · News',
           body:
             'Quick-hitting snow to precede potential blockbuster storm across the mid-Atlantic, Northeast',
-          img: './assets/images/dayman-avatar.jpg',
+          img: './assets/images/im-not-a-cat.png',
         },
       ];
 
