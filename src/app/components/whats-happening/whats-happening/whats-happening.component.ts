@@ -23,13 +23,13 @@ export class WhatsHappeningComponent implements OnInit {
         {
           category: 'Weather · LIVE',
           body:
-            '‘I’m Not a Cat,’ Lawyer Tells Judge When He Can’t Change The Zoom Filter – Hilarious Video',
-          img: './assets/images/dayman-avatar.jpg',
+            'Quick-hitting snow to precede potential blockbuster storm across the mid-Atlantic, Northeast',
+          img: './assets/images/weather.png',
         },
         {
-          category: 'Weather · News',
+          category: 'Zoom · News',
           body:
-            'Quick-hitting snow to precede potential blockbuster storm across the mid-Atlantic, Northeast',
+            '‘I’m Not a Cat,’ Lawyer Tells Judge When He Can’t Change The Zoom Filter – Hilarious Video',
           img: './assets/images/im-not-a-cat.png',
         },
       ];
