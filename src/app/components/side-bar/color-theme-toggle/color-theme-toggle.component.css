@@ -4,7 +4,7 @@ button {
   height: 4em;
   padding: 0.6em;
   margin-left: 20px;
-  font-weight: 500;
+  font-weight: bolder;
   color: white;
   background-color: var(--twitter-blue);
   border: none;

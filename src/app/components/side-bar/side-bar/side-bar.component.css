@@ -105,6 +105,8 @@ button:hover {
   button {
     height: 50px;
     width: 50px;
+    font-size: 14px;
+    font-style: normal;
   }
 }
 
