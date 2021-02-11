@@ -10,7 +10,7 @@ import { ColorThemeService } from 'src/app/services/color-theme.service';
 export class WhoToFollowComponent implements OnInit {
   public colorTheme: Theme;
 
-  public avatarImage: string = './assets/images/dayman-avatar.jpg';
+  public avatarImage: string = './assets/images/invesco-us.jpg';
   public avatarImage2: string = './assets/images/steve-martin-avatar.jpg';
 
   constructor(private colorThemeService: ColorThemeService) {}
