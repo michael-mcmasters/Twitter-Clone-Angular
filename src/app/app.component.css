@@ -8,6 +8,7 @@
   align-self: flex-start; /* Need this for position sticky to work when also using flexbox - Source: https://stackoverflow.com/questions/44446671/my-position-sticky-element-isnt-sticky-when-using-flexbox */
   top: 0;
   margin-right: 40px;
+  margin-left: 20px;
 }
 
 .center-container {

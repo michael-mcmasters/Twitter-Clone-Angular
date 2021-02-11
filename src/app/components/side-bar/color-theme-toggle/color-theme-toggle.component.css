@@ -3,6 +3,7 @@ button {
   top: 87vh;
   height: 4em;
   padding: 0.6em;
+  margin-left: 20px;
   font-weight: 500;
   color: white;
   background-color: var(--twitter-blue);
@@ -26,8 +27,8 @@ button:hover {
   }
 }
 
-@media (max-width: 1005px) {
+@media (max-width: 1000px) {
   button {
-    display: none;
+    margin-left: 38px;
   }
 }
