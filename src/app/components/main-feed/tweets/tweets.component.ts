@@ -14,7 +14,7 @@ export class TweetsComponent implements OnInit {
     this.tweets = [
       {
         name: 'Bill Gates',
-        userName: 'DaymanKnight',
+        userName: 'BillGates',
         postAge: 2,
         profileImage: './assets/images/billgates.jpg',
         message:
@@ -22,7 +22,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Steve Jobs',
-        userName: 'NateMcMasters',
+        userName: 'SteveJobsCEO',
         postAge: 3,
         profileImage: './assets/images/stevejobs2.jpg',
         message:
@@ -30,7 +30,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'James Gosling',
-        userName: 'Sparklebunny',
+        userName: 'errcraft',
         postAge: 6,
         profileImage: './assets/images/jamesgosling.jpg',
         message:
@@ -38,7 +38,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Uncle Bob',
-        userName: 'ChrisBFriedChicken',
+        userName: 'unclebobmartin',
         postAge: 6,
         profileImage: './assets/images/unclebob.png',
         message:
@@ -47,7 +47,7 @@ export class TweetsComponent implements OnInit {
 
       {
         name: 'Tim Cook',
-        userName: 'Sparklebunny',
+        userName: 'tim_cook',
         postAge: 6,
         profileImage: './assets/images/timcook.jpg',
         message:
@@ -63,7 +63,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Elon Musk',
-        userName: 'Sparklebunny',
+        userName: 'elonmusk',
         postAge: 6,
         profileImage: './assets/images/elonmusk.jpg',
         message:
@@ -71,7 +71,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Satya Nadella',
-        userName: 'Sparklebunny',
+        userName: 'satyanadella',
         postAge: 6,
         profileImage: './assets/images/satyanadella.jpg',
         message:
@@ -79,7 +79,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Palmer Luckey',
-        userName: 'Sparklebunny',
+        userName: 'PalmerLuckey',
         postAge: 6,
         profileImage: './assets/images/palmerluckey.png',
         message:
@@ -87,7 +87,7 @@ export class TweetsComponent implements OnInit {
       },
       {
         name: 'Andy Jassy',
-        userName: 'Sparklebunny',
+        userName: 'ajassy',
         postAge: 6,
         profileImage: './assets/images/andyjassy.jpeg',
         message:
