@@ -5,9 +5,9 @@ Here's a Twitter clone built in Angular that I worked on over the summer before 
 My goal was to create a near pixel perfect clone without taking shortcuts to really understand CSS and to learn TypeScript. I found myself really enjoying both, especially TypeScript, because of its similarity to strongly-typed programming languages such as Java and C# which I also love using. There are still a few more things I want to add but I'm really excited about how it's coming out!
 
 ## To Run
-`git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git
-cd Twitter-Clone-Angular
-ng serve --open`  
+`git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git`  
+`cd Twitter-Clone-Angular`  
+`ng serve --open`  
 
 Dark Theme / Light Theme Toggle  
 <img src="/src/assets/gifs/colorthemetoggle.gif" width="700" height="400" />
