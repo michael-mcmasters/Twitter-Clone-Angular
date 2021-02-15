@@ -1,6 +1,13 @@
-# LearningAngularProject
+# Twitter-Clone
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+Here's a Twitter clone built in Angular that I worked on over the summer before starting at Code Differently. I used FontAwesome and Angular Material for the icons, RxJS and CSS variables for the dark theme / light theme toggle, and then added hover transitions, sticky scrollable sidebars, styled input fields and made the site completely responsive.
+
+My goal was to create a near pixel perfect clone without taking shortcuts to really understand CSS and to learn TypeScript. I found myself really enjoying both, especially TypeScript, because of its similarity to strongly-typed programming languages such as Java and C# which I also love using. There are still a few more things I want to add but I'm really excited about how it's coming out!
+
+## To Run
+git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git
+cd Twitter-Clone-Angular
+ng serve --open
 
 Dark Theme / Light Theme Toggle  
 <img src="/src/assets/gifs/colorthemetoggle.gif" width="700" height="400" />
@@ -13,27 +20,3 @@ Responsive Design
 
 Styled Input Fields  
 <img src="/src/assets/gifs/styled-input.gif" width="700" height="400" />
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
