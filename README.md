@@ -5,6 +5,7 @@ This is a project I worked on over the summer before starting at Code Differentl
 The project uses FontAwesome and Angular Material for its icons. And RxJS and CSS variables for the dark theme / light theme toggle. In the GIFs below you can see examples of hover transitions, sticky scrollable sidebars, styled input fields and a completely responsive design.
 
 ## To Run
+Using Node
 ```
 git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git
 cd Twitter-Clone-Angular
