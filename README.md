@@ -8,6 +8,7 @@ The project uses FontAwesome and Angular Material for its icons. And RxJS and CS
 ```
 git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git
 cd Twitter-Clone-Angular
+npm install
 ng serve --open
 ```
 
