@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
+<img src="/src/assets/gifs/colorthemetoggle.gif" width="600" height="400" />
+
+<img src="/src/assets/gifs/responsive.gif" width="600" height="400" />
+
+<img src="/src/assets/gifs/scrolling.gif" width="600" height="400" />
+
+<img src="/src/assets/gifs/styled-input.gif" width="600" height="400" />
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
