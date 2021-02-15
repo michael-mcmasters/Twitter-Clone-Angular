@@ -2,13 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
-<img src="/src/assets/gifs/colorthemetoggle.gif" width="600" height="400" />
+Dark Theme / Light Theme Toggle  
+<img src="/src/assets/gifs/colorthemetoggle.gif" width="700" height="400" />
 
-<img src="/src/assets/gifs/responsive.gif" width="600" height="400" />
+Sticky Scrolling Sidebar  
+<img src="/src/assets/gifs/scrolling.gif" width="700" height="400" />
 
-<img src="/src/assets/gifs/scrolling.gif" width="600" height="400" />
+Responsive Design  
+<img src="/src/assets/gifs/responsive.gif" width="700" height="400" />
 
-<img src="/src/assets/gifs/styled-input.gif" width="600" height="400" />
+Styled Input Fields  
+<img src="/src/assets/gifs/styled-input.gif" width="700" height="400" />
 
 ## Development server
 
