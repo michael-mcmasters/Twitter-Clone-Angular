@@ -17,35 +17,32 @@ export class AppComponent {
 
   ngOnInit(): void {
     const rightSideContainer = document.getElementById("right-side-container");
-    const getAmountScrolled = this.getAmountScrolledClosure();
+    const getAmountScrolled = this.getAmountScrolled();
 
     window.addEventListener("scroll", () => {
       this.scrollSideBar(rightSideContainer, getAmountScrolled);
     })
   }
 
-  // Function makes right sidebar scroll when mouse scrolls, even if it isn't hovering over it. (Only if overflowing.)
-  // Scroll listener is called multiple times per scroll wheel "tick". And amountScrolled will give multiple different values per every "tick". Console.log it to debug.
+  // Makes sure sidebar scrolls when user scrolls but isn't hovering over the sidebar. (Only when content doesn't fit in window.)
   scrollSideBar(rightSideContainer: HTMLElement, getAmountScrolled: Function): void {
     const scrollBarPosition = window.scrollY;
     const amountScrolled = getAmountScrolled();
 
-    // If scroll bar position is less than 0, Safari will pull the page back up. This check makes sure the element does not scroll when that happens.
     if (scrollBarPosition >= 0) {
-      if (scrollBarPosition > this.prevScrollBarPosition) {
-        rightSideContainer.scrollBy(0, amountScrolled); // user scrolled down
+      if (scrollBarPosition > this.prevScrollBarPosition) { // user scrolled down
+        rightSideContainer.scrollBy(0, amountScrolled);
       }
-      else if (scrollBarPosition < this.prevScrollBarPosition) {
-        rightSideContainer.scrollBy(0, amountScrolled); // user scrolled up
+      else if (scrollBarPosition < this.prevScrollBarPosition) { // user scrolled up
+        rightSideContainer.scrollBy(0, amountScrolled);
       }
     }
     this.prevScrollBarPosition = scrollBarPosition;
   }
 
-  // This is a closure (see notes). getAmountScrolledClosure() returns the function inside of it.
-  // When the inner function is called, it can access the properties of its outer function.
-  // (This function is based off of: https://stackoverflow.com/questions/22593286/detect-measure-scroll-speed).
-  getAmountScrolledClosure(): Function {
+  // Gets amount scrolled since last frame. (Listener is called multiple times per scroll "tick".)
+  // Function is based off of: https://stackoverflow.com/questions/22593286/detect-measure-scroll-speed.
+  getAmountScrolled(): Function {
     var lastPos, newPos, timer, delta,
       delay = 50; // in "ms" (higher means lower fidelity )
 
@@ -56,8 +53,6 @@ export class AppComponent {
 
     clear();
 
-    // Function returns the amount page has scrolled since the last time function was called.
-    // This inner function can access the properties above when called.
     return function getAmountScrolled() {
       newPos = window.scrollY;
       if (lastPos != null) {

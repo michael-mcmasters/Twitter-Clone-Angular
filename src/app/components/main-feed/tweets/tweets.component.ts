@@ -10,7 +10,6 @@ export class TweetsComponent implements OnInit {
   tweets: Tweet[];
 
   constructor() {
-    // This *could* be assigned when tweets is declared. But putting it here, because we would be using an API call in the constructor to get this information.
     this.tweets = [
       {
         name: 'Bill Gates',
