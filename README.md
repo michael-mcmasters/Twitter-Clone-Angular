@@ -1,13 +1,19 @@
-# Twitter-Clone
+# Twitter Clone
 
-Here's a Twitter clone built in Angular that I worked on over the summer before starting at Code Differently. I used FontAwesome and Angular Material for the icons, RxJS and CSS variables for the dark theme / light theme toggle, and then added hover transitions, sticky scrollable sidebars, styled input fields and made the site completely responsive.
+This is a project I worked on over the summer before starting at Code Differently. My goal was to create a near pixel perfect clone without taking shortcuts to really understand CSS and to learn TypeScript. I found myself really enjoying both, especially TypeScript, because of its similarity to strongly-typed programming languages such as Java and C# which I also love using.
 
-My goal was to create a near pixel perfect clone without taking shortcuts to really understand CSS and to learn TypeScript. I found myself really enjoying both, especially TypeScript, because of its similarity to strongly-typed programming languages such as Java and C# which I also love using. There are still a few more things I want to add but I'm really excited about how it's coming out!
+The project uses FontAwesome and Angular Material for its icons. And RxJS and CSS variables for the dark theme / light theme toggle. In the GIFs below you can see examples of hover transitions, sticky scrollable sidebars, styled input fields and a completely responsive design.
 
 ## To Run
-`git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git`  
-`cd Twitter-Clone-Angular`  
-`ng serve --open`  
+Using Node
+```
+git clone https://github.com/michael-mcmasters/Twitter-Clone-Angular.git
+cd Twitter-Clone-Angular
+npm install
+ng serve --open
+```
+
+## GIFs
 
 Dark Theme / Light Theme Toggle  
 <img src="/src/assets/gifs/colorthemetoggle.gif" width="700" height="400" />
