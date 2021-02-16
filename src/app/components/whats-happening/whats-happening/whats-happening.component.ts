@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Theme } from 'src/app/models/theme';
 import { ColorThemeService } from 'src/app/services/color-theme.service';
-import Article from 'src/app/models/Article';
-import Trending from 'src/app/models/Trending';
-import Promotion from 'src/app/models/Promotion';
+import Article from 'src/app/models/article';
+import Trending from 'src/app/models/trending';
+import Promotion from 'src/app/models/promotion';
 
 @Component({
   selector: 'app-whats-happening',

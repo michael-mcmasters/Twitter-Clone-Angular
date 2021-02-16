@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import Trending from 'src/app/models/Trending';
+import Trending from 'src/app/models/trending';
 
 @Component({
   selector: 'app-trending',
