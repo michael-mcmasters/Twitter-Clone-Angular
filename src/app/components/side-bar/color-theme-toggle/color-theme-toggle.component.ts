@@ -13,18 +13,17 @@ export class ColorThemeToggleComponent implements OnInit {
 
   constructor(
     private colorThemeService: ColorThemeService,
-    @Inject(DOCUMENT) private document: Document,
+    @Inject(DOCUMENT) private document: Document
   ) {}
 
   ngOnInit(): void {
-    // subscribe() runs every time value of observable changes.
-    // It also runs once on initiation. And so this.theme = newTheme in callback will run when website starts.
+    // Toggle light-theme and dark-theme on the body element. Must be done this way because you can't use [ngClass] in index.html.
     this.colorThemeService.ColorTheme$.subscribe((newTheme) => {
-      this.document.body.classList.replace(this.theme, newTheme); // toggle 'light-theme' 'dark-theme' class on <body> tag. It has to be done this way because you can't use [ngClass] in index.html.
+      this.document.body.classList.replace(this.theme, newTheme);
       this.theme = newTheme;
     });
   }
-  
+
   changeTheme() {
     this.colorThemeService.changeTheme();
   }
