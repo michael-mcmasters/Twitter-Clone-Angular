@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Theme } from 'src/app/models/theme';
 import { ColorThemeService } from 'src/app/services/color-theme.service';
+import Article from 'src/app/models/Article';
+import Trending from 'src/app/models/Trending';
+import Promotion from 'src/app/models/Promotion';
 
 @Component({
   selector: 'app-whats-happening',
@@ -9,9 +12,9 @@ import { ColorThemeService } from 'src/app/services/color-theme.service';
 })
 export class WhatsHappeningComponent implements OnInit {
   public colorTheme: Theme;
-  public articles: any[];
-  public trending: any[];
-  public promotions: any[];
+  public articles: Article[];
+  public trending: Trending[];
+  public promotions: Promotion[];
 
   constructor(private colorThemeService: ColorThemeService) {}
 

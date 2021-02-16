@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import Trending from 'src/app/models/Trending';
 
 @Component({
   selector: 'app-trending',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TrendingComponent implements OnInit {
   constructor() {}
-  @Input() public trending: any;
+  @Input() public trending: Trending;
 
   ngOnInit(): void {}
 }

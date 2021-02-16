@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import Promotion from 'src/app/models/Promotion';
 
 @Component({
   selector: 'app-promotion',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./promotion.component.css'],
 })
 export class PromotionComponent implements OnInit {
-  @Input() promotion: any;
+  @Input() promotion: Promotion;
 
   constructor() {}
 
