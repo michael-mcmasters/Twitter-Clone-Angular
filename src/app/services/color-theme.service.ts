@@ -5,18 +5,20 @@ import { Theme } from '../models/theme';
 @Injectable({
   providedIn: 'root',
 })
+
+// Color values can be found in styles.css as CSS variables.
+// This service provides the class name needed to activate the variables.
+// The consuming components are responsible for adding the class to their individual HTML elements.
 export class ColorThemeService {
-  // BehaviourService is a kind of Observable. This value defaults to dark theme.
   private colorTheme$: BehaviorSubject<Theme> = new BehaviorSubject<Theme>(
     Theme.darkTheme
   );
 
-  // This is just a public getter property
   get ColorTheme$(): BehaviorSubject<Theme> {
     return this.colorTheme$;
   }
 
-  // Use observable.next() to change the value to the new value.
+  // Toggles between light theme / dark theme.
   changeTheme(): BehaviorSubject<Theme> {
     if (this.colorTheme$.value === Theme.lightTheme) {
       this.colorTheme$.next(Theme.darkTheme);
