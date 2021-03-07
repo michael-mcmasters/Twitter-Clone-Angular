@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Tweet } from 'src/app/models/tweet';
+import { PersonService } from "src/app/services/person.service";
 
 @Component({
   selector: 'app-tweets',
@@ -9,7 +10,10 @@ import { Tweet } from 'src/app/models/tweet';
 export class TweetsComponent implements OnInit {
   tweets: Tweet[];
 
-  constructor() {
+  constructor(personService: PersonService) {
+    
+    personService.getRandomPerson();
+    
     this.tweets = [
       {
         name: 'Bill Gates',

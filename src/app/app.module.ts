@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 
@@ -21,9 +22,29 @@ import { ArticleComponent } from './components/whats-happening/article/article.c
 import { WhoToFollowComponent } from './components/who-to-follow/who-to-follow.component';
 
 @NgModule({
-  declarations: [AppComponent, TweetsComponent, TweetComponent, ColorThemeToggleComponent, SideBarComponent, WhatsHappeningComponent, TweetComposerComponent, PromotionComponent, TrendingComponent, ArticleComponent, WhoToFollowComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatIconModule, FontAwesomeModule],
+  declarations: [
+    AppComponent,
+    TweetsComponent,
+    TweetComponent,
+    ColorThemeToggleComponent,
+    SideBarComponent,
+    WhatsHappeningComponent,
+    TweetComposerComponent,
+    PromotionComponent,
+    TrendingComponent,
+    ArticleComponent,
+    WhoToFollowComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    FontAwesomeModule,
+    HttpClientModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
