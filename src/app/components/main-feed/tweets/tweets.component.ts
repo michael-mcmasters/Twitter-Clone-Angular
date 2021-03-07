@@ -14,11 +14,14 @@ export class TweetsComponent implements OnInit {
     
     let res = personService.fetchRandomPerson(4);
     res.subscribe(val => {
-      console.log(val.results[0].name.first);
-      console.log(val.results[0].name.last);
-      this.tweets[0].name = val.results[0].name.first;
-      this.tweets[0].profileImage = val.results[0].picture;
-    });
+      val.results.forEach((r, index) => {
+        console.log(r.name.first);
+        console.log(r.name.last);
+        this.tweets[index].name = r.name.first;
+        this.tweets[index].profileImage = r.picture;
+      })});
+    
+    
     //personService.fetchRandomQuote();
     
     this.tweets = [
