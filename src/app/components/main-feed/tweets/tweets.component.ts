@@ -15,9 +15,7 @@ export class TweetsComponent implements OnInit {
     let res = personService.fetchRandomPerson(11);
     res.subscribe(val => {
       val.results.forEach((r, index) => {
-        console.log(r.name.first);
-        console.log(r.name.last);
-        this.tweets[index].name = r.name.first;
+        this.tweets[index].name = r.name.first + " " + r.name.last;
         this.tweets[index].profileImage = r.picture.large;
       })});
     
