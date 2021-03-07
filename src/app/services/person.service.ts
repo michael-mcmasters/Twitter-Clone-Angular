@@ -16,8 +16,14 @@ export class PersonService {
   }
   
   getRandomPerson(): Observable<Person> {
-    let observable = this.http.get<Quote[]>(this.randomQuoteUrl);
-    observable.forEach(quote => console.log(quote));
+    let observable = this.http.get<Person>(this.randomPersonUrl);
+    console.log(observable);
+    return observable;
+  }
+  
+  getRandomQuote(): Observable<Quote[]> {
+    let observable = this.http.get<Quote[]>(this.randomPersonUrl);
+    observable.forEach((quote) => console.log(quote));
     return observable;
   }
 }

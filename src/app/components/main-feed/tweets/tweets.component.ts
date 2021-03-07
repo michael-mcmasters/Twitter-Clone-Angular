@@ -13,6 +13,7 @@ export class TweetsComponent implements OnInit {
   constructor(personService: PersonService) {
     
     personService.getRandomPerson();
+    personService.getRandomQuote();
     
     this.tweets = [
       {
