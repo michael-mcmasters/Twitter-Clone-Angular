@@ -11,4 +11,8 @@ export class TweetComposerComponent implements OnInit {
   constructor() {}
   
   ngOnInit() {}
+  
+  submitTweet() {
+    console.log("tweet button clicked");
+  }
 }
