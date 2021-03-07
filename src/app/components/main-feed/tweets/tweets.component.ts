@@ -12,7 +12,7 @@ export class TweetsComponent implements OnInit {
 
   constructor(personService: PersonService) {
     
-    let res = personService.fetchRandomPerson(4);
+    let res = personService.fetchRandomPerson(11);
     res.subscribe(val => {
       val.results.forEach((r, index) => {
         console.log(r.name.first);

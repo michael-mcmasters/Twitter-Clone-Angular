@@ -9,7 +9,7 @@ import { Person } from '../models/person';
 })
 export class PersonService {
   randomPersonUrl: string = 'https://randomuser.me/api/';
-  amount: string = 'https://randomuser.me/api/?results=4';
+  amountPath: string = '?results=';
 
   randomQuoteUrl: string = 'https://type.fit/api/quotes';
 
@@ -34,10 +34,10 @@ export class PersonService {
   // }
 
   fetchRandomPerson(amount: number): Observable<Person[]> {
-    // let observable = this.http.get<Person>(this.randomPersonUrl+this.amountPath+amount);
-    let observable = this.http.get<Person[]>(
-      'https://randomuser.me/api/?results=4'
-    );
+    let observable = this.http.get<Person>(this.randomPersonUrl + this.amountPath + amount);
+    // let observable = this.http.get<Person[]>(
+    //   'https://randomuser.me/api/?results=4'
+    // );
     //console.log(observable);
     return observable;
   }
