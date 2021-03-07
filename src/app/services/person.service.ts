@@ -9,21 +9,42 @@ import { Person } from '../models/person';
 })
 export class PersonService {
   randomPersonUrl: string = 'https://randomuser.me/api/';
-  randomQuoteUrl: string = "https://type.fit/api/quotes";
+  amount: string = 'https://randomuser.me/api/?results=4';
 
-  constructor(private http: HttpClient) {
-    
+  randomQuoteUrl: string = 'https://type.fit/api/quotes';
+
+  constructor(private http: HttpClient) {}
+
+  getRandomPerson(): Person {
+    let person = this.fetchRandomPerson();
+    let data = null;
+    //person.subscribe(val => console.log(val.results[0].gender));
+    person.subscribe((val) => (data = val));
+    return person;
+    //console.log(data.gender);
+
+    //let quote = this.fetchRandomQuote();
+    return null;
   }
-  
-  getRandomPerson(): Observable<Person> {
-    let observable = this.http.get<Person>(this.randomPersonUrl);
-    console.log(observable);
+
+  // fetchRandomPerson(): Observable<Person> {
+  //   let observable = this.http.get<Person>(this.randomPersonUrl);
+  //   //console.log(observable);
+  //   return observable;
+  // }
+
+  fetchRandomPerson(amount: number): Observable<Person[]> {
+    // let observable = this.http.get<Person>(this.randomPersonUrl+this.amountPath+amount);
+    let observable = this.http.get<Person[]>(
+      'https://randomuser.me/api/?results=4'
+    );
+    //console.log(observable);
     return observable;
   }
-  
-  getRandomQuote(): Observable<Quote[]> {
+
+  fetchRandomQuote(): Observable<Quote[]> {
     let observable = this.http.get<Quote[]>(this.randomPersonUrl);
-    observable.forEach((quote) => console.log(quote));
+    //observable.forEach((quote) => console.log(quote));
     return observable;
   }
 }

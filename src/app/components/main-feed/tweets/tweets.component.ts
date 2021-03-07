@@ -12,8 +12,14 @@ export class TweetsComponent implements OnInit {
 
   constructor(personService: PersonService) {
     
-    personService.getRandomPerson();
-    personService.getRandomQuote();
+    let res = personService.fetchRandomPerson(4);
+    res.subscribe(val => {
+      console.log(val.results[0].name.first);
+      console.log(val.results[0].name.last);
+      this.tweets[0].name = val.results[0].name.first;
+      this.tweets[0].profileImage = val.results[0].picture;
+    });
+    //personService.fetchRandomQuote();
     
     this.tweets = [
       {
