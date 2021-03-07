@@ -17,6 +17,7 @@ export class TweetsComponent implements OnInit {
       response.results.forEach((r, index) => {
         this.tweets[index].name = r.name.first + " " + r.name.last;
         this.tweets[index].profileImage = r.picture.large;
+        this.tweets[index].userName = r.login.username;
       })});
     
     
