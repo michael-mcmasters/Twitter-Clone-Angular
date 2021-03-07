@@ -18,7 +18,7 @@ export class TweetsComponent implements OnInit {
         console.log(r.name.first);
         console.log(r.name.last);
         this.tweets[index].name = r.name.first;
-        this.tweets[index].profileImage = r.picture;
+        this.tweets[index].profileImage = r.picture.large;
       })});
     
     
