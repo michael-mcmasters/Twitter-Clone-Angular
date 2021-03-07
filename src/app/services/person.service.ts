@@ -15,22 +15,16 @@ export class PersonService {
 
   constructor(private http: HttpClient) {}
 
-  getRandomPerson(): Person {
-    let person = this.fetchRandomPerson();
-    let data = null;
-    //person.subscribe(val => console.log(val.results[0].gender));
-    person.subscribe((val) => (data = val));
-    return person;
-    //console.log(data.gender);
+  // getRandomPerson(): Person {
+  //   let person = this.fetchRandomPerson();
+  //   let data = null;
+  //   //person.subscribe(val => console.log(val.results[0].gender));
+  //   person.subscribe((val) => (data = val));
+  //   return person;
+  //   //console.log(data.gender);
 
-    //let quote = this.fetchRandomQuote();
-    return null;
-  }
-
-  // fetchRandomPerson(): Observable<Person> {
-  //   let observable = this.http.get<Person>(this.randomPersonUrl);
-  //   //console.log(observable);
-  //   return observable;
+  //   //let quote = this.fetchRandomQuote();
+  //   return null;
   // }
 
   fetchRandomPerson(amount: number): Observable<Person[]> {
@@ -43,7 +37,7 @@ export class PersonService {
   }
 
   fetchRandomQuote(): Observable<Quote[]> {
-    let observable = this.http.get<Quote[]>(this.randomPersonUrl);
+    let observable = this.http.get<Quote[]>(this.randomQuoteUrl);
     //observable.forEach((quote) => console.log(quote));
     return observable;
   }
